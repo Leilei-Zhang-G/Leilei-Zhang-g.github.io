@@ -11,7 +11,9 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body{% if page.page_class %} class="{{ page.page_class | escape }}"{% endif %}>
+
+    {% if page.layout == 'home' %}<a class="home-skip-link" href="#main">{% if page.lang == 'zh-CN' %}跳转到正文{% else %}Skip to content{% endif %}</a>{% endif %}
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}

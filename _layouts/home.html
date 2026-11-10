@@ -1,0 +1,67 @@
+---
+layout: default
+---
+{% assign home = site.data.home[page.home_language] %}
+<main id="main" class="academic-home" tabindex="-1">
+  <section class="home-hero" aria-labelledby="home-name">
+    <div class="home-container home-hero-grid">
+      <header class="home-heading">
+        <p class="home-eyebrow">{{ home.discipline }}</p>
+        <h1 id="home-name">{{ home.name }}<span lang="{{ home.secondary_lang }}">{{ home.secondary_name }}</span></h1>
+        <p class="home-position"><strong>{{ home.position }}</strong><br><a href="{{ site.author.employer_url }}">{{ home.institution }}</a></p>
+      </header>
+      <figure class="home-portrait">
+        <div class="home-portrait-frame">
+          <img src="{{ site.author.avatar | prepend: '/images/' | relative_url }}" alt="{{ home.portrait_alt }}" width="899" height="1411" fetchpriority="high">
+        </div>
+        <figcaption><span class="home-location-dot" aria-hidden="true"></span>{{ home.location }}</figcaption>
+      </figure>
+      <div class="home-bio">
+        {{ content }}
+        <div class="home-actions">
+          <a class="home-button home-button-primary" href="{{ home.research_url | relative_url }}">{{ home.research_link }}<span aria-hidden="true">{% include home-arrow.svg %}</span></a>
+          <a class="home-button" href="{{ home.cv_url | relative_url }}">{{ home.cv_link }}<span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="home-graph" aria-hidden="true">{% include home-petersen.svg %}</div>
+    </div>
+  </section>
+
+  <section id="research" class="home-research home-container" aria-labelledby="home-research-title">
+    <div class="home-section-heading">
+      <div><p class="home-eyebrow">{{ home.research_label }}</p><h2 id="home-research-title">{{ home.research_heading }}</h2></div>
+      <a class="home-text-link" href="{{ home.research_url | relative_url }}">{{ home.papers_link }} <span aria-hidden="true">{% include home-arrow.svg %}</span></a>
+    </div>
+    <div class="home-research-grid">
+      {% for interest in home.interests %}
+      <article class="home-interest">
+        <div class="home-interest-index" aria-hidden="true"><span>0{{ forloop.index }}</span><span class="home-edge"></span></div>
+        <h3>{{ interest.title }}</h3>
+        <p>{{ interest.text }}</p>
+        <ul class="home-keywords">{% for keyword in interest.keywords %}<li>{{ keyword }}</li>{% endfor %}</ul>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="home-activity home-container" aria-labelledby="home-activity-title">
+    <div class="home-section-heading"><div><p class="home-eyebrow">{{ home.activity_label }}</p><h2 id="home-activity-title">{{ home.activity_heading }}</h2></div></div>
+    <div class="home-activity-links">
+      {% for activity in home.activities %}
+      <a href="{{ activity.url | relative_url }}"><div><h3>{{ activity.title }}</h3><p>{{ activity.description }}</p></div><span class="home-link-arrow" aria-hidden="true">{% include home-arrow.svg %}</span></a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="home-contact" aria-labelledby="home-contact-title">
+    <div class="home-container home-contact-inner">
+      <div><h2 id="home-contact-title">{{ home.contact_heading }}</h2><a class="home-email" href="mailto:{{ site.author.email | escape }}">{{ site.author.email }} <span aria-hidden="true">{% include home-arrow.svg %}</span></a></div>
+      <nav class="home-profiles" aria-label="{{ home.profiles_label }}">
+        {% for profile in site.data.academic.profiles %}{% if profile.url and profile.url != '' %}
+        <a href="{{ profile.url | escape }}">{% if page.lang == 'zh-CN' %}{{ profile.sidebar_name_zh | default: profile.name_zh }}{% else %}{{ profile.sidebar_name | default: profile.name }}{% endif %}<span aria-hidden="true">{% include home-arrow.svg %}</span></a>
+        {% endif %}{% endfor %}
+        {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}">GitHub<span aria-hidden="true">{% include home-arrow.svg %}</span></a>{% endif %}
+      </nav>
+    </div>
+  </section>
+</main>

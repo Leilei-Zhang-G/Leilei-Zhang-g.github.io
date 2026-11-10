@@ -1,0 +1,75 @@
+# Presentation text for the two homepages; academic records remain in academic.yml.
+en:
+  discipline: Graph theory & combinatorics
+  name: Leilei Zhang
+  secondary_name: 张雷雷
+  secondary_lang: zh-CN
+  position: JSPS Postdoctoral Fellow
+  institution: Yokohama National University
+  location: Yokohama, Japan
+  portrait_alt: Portrait of Leilei Zhang
+  research_link: Explore my research
+  research_url: /research/
+  cv_link: Curriculum vitae
+  cv_url: /cv/
+  research_label: Research
+  research_heading: Research interests
+  papers_link: Publications & submissions
+  interests:
+    - title: Hamiltonian graph theory
+      text: Hamiltonian cycles and paths, Hamiltonian-connectedness, and sufficient conditions involving degree, connectivity, and domination.
+      keywords: [Cycles and paths, Degree conditions, Connectivity]
+    - title: Extremal graph theory
+      text: Extremal problems involving cycles, paths, matchings, and linear forests, including sharp bounds on the number of edges and cliques and the characterization of extremal graphs.
+      keywords: [Sharp bounds, Extremal graphs]
+    - title: Structural graph theory
+      text: Graph connectivity, vertex cuts, and local structure, with particular interest in claw-free graphs and line graphs of graphs and 3-hypergraphs.
+      keywords: [Claw-free graphs, Line graphs, 3-hypergraphs]
+  activity_label: Academic activities
+  activity_heading: News & talks
+  activities:
+    - title: News
+      description: Research notes, conferences and academic visits.
+      url: /academic-life/
+    - title: Talks
+      description: Conference talks, seminar presentations and slides.
+      url: /talks/
+  contact_heading: Contact & profiles
+  profiles_label: Academic profiles and links
+zh:
+  discipline: 图论与组合数学
+  name: 张雷雷
+  secondary_name: Leilei Zhang
+  secondary_lang: en
+  position: JSPS 外国人特别研究员
+  institution: 横滨国立大学
+  location: 日本 · 横滨
+  portrait_alt: 张雷雷的照片
+  research_link: 查看我的研究
+  research_url: /zh/research/
+  cv_link: 个人简历
+  cv_url: /zh/cv/
+  research_label: Research
+  research_heading: 研究方向
+  papers_link: 发表论文与投稿
+  interests:
+    - title: 哈密尔顿图论
+      text: 哈密尔顿圈与路、哈密尔顿连通性，以及与度、连通度和支配有关的充分条件。
+      keywords: [圈与路, 度条件, 连通度]
+    - title: 极值图论
+      text: 涉及圈、路、匹配和线性森林的极值问题，包括边数与团数的最优界及极值图的刻画。
+      keywords: [最优界, 极值图]
+    - title: 结构图论
+      text: 图的连通性、顶点割和局部结构，重点关注无爪图，以及图和 3-超图的线图。
+      keywords: [无爪图, 线图, 3-超图]
+  activity_label: Academic activities
+  activity_heading: 学术动态与报告
+  activities:
+    - title: 动态
+      description: 研究札记、学术会议与访问交流。
+      url: /zh/academic-life/
+    - title: 学术报告
+      description: 会议报告、研讨班报告与报告幻灯片。
+      url: /zh/talks/
+  contact_heading: 联系方式与学术档案
+  profiles_label: 学术档案与相关链接
