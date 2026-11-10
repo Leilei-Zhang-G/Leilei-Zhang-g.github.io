@@ -4,7 +4,7 @@ title: "Leilei Zhang（张雷雷）"
 author_profile: true
 lang: en-US
 translation_url: /zh/
-excerpt: "Graph theory and combinatorics: Hamiltonian properties, connectivity, line graphs, and hypergraphs."
+excerpt: "Graph theory and combinatorics: extremal problems related to cycles and paths in structural graph theory."
 redirect_from:
   - /about/
   - /about.html
@@ -12,7 +12,7 @@ redirect_from:
 
 **JSPS Postdoctoral Fellow**, [Yokohama National University](https://www.ynu.ac.jp/english/)
 
-Welcome to my homepage. I work in graph theory and combinatorics, with particular interests in Hamiltonian properties, connectivity, line graphs, and hypergraphs.
+Welcome to my homepage. I work in graph theory and combinatorics, with particular interests in extremal problems related to cycles and paths in structural graph theory.
 
 ## Research interests {#research}
 

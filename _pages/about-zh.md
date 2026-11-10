@@ -4,12 +4,12 @@ title: "张雷雷（Leilei Zhang）"
 author_profile: true
 lang: zh-CN
 translation_url: /
-excerpt: "图论与组合数学：哈密尔顿性质、连通度、线图与超图。"
+excerpt: "图论与组合数学：结构图论中与圈和路有关的极值问题。"
 ---
 
 **JSPS Postdoctoral Fellow**, [横滨国立大学（Yokohama National University）](https://www.ynu.ac.jp/english/)
 
-欢迎来到我的个人主页。我的研究方向是图论与组合数学，主要关注图的哈密尔顿性质、连通度、线图和超图。
+欢迎来到我的个人主页。我的研究方向是图论与组合数学，主要关注结构图论中与圈和路有关的极值问题。
 
 ## 研究方向 {#research}
 
