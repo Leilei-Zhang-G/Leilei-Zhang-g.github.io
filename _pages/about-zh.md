@@ -23,9 +23,3 @@ excerpt: "图论与组合数学：哈密尔顿性质、连通度、线图与超�
 {% include publications-fold.html %}
 
 {% include section-links.html %}
-
-## 联系方式 {#contact}
-
-我的公开代码仓库：[GitHub](https://github.com/Leilei-Zhang-G)。
-
-<!-- 可继续补充公开邮箱和学术资料链接。 -->

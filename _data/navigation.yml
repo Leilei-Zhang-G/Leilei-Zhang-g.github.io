@@ -12,8 +12,6 @@ main:
   url: /talks/
 - title: CV
   url: /cv/
-- title: Contact
-  url: /#contact
 zh:
 - title: 研究方向
   url: /zh/#research
@@ -27,5 +25,3 @@ zh:
   url: /zh/talks/
 - title: 简历
   url: /zh/cv/
-- title: 联系
-  url: /zh/#contact

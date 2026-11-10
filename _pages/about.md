@@ -10,8 +10,6 @@ redirect_from:
   - /about.html
 ---
 
-[中文]({{ '/zh/' | relative_url }})
-
 **JSPS Postdoctoral Fellow**<br>
 [Yokohama National University](https://www.ynu.ac.jp/english/)
 
@@ -26,9 +24,3 @@ Welcome to my homepage. I work in graph theory and combinatorics, with particula
 {% include publications-fold.html %}
 
 {% include section-links.html %}
-
-## Contact {#contact}
-
-You can find my public repositories on [GitHub](https://github.com/Leilei-Zhang-G).
-
-<!-- A public contact email and academic profile links can be added when provided. -->

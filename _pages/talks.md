@@ -8,8 +8,6 @@ translation_url: /zh/talks/
 excerpt: Conference and seminar presentations.
 ---
 
-[中文]({{ '/zh/talks/' | relative_url }})
-
 Conference and seminar presentations.
 
 {% include talk-list.html %}

@@ -10,6 +10,4 @@ redirect_from:
 - /resume
 ---
 
-[中文]({{ '/zh/cv/' | relative_url }})
-
 {% include cv-content.html %}

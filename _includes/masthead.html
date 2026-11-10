@@ -1,13 +1,10 @@
 {% include base_path %}
 {% assign main_navigation = site.data.navigation.main %}
 {% assign home_url = '/' %}
-{% assign language_title = '中文' %}
-{% assign language_url = page.translation_url | default: '/zh/' %}
 {% assign menu_label = 'Open navigation menu' %}
 {% if page.lang == 'zh-CN' %}
   {% assign main_navigation = site.data.navigation.zh %}
   {% assign home_url = '/zh/' %}
-  {% assign language_title = 'English' %}
   {% assign language_url = page.translation_url | default: '/' %}
   {% assign menu_label = '打开导航菜单' %}
 {% endif %}
@@ -30,7 +27,9 @@
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
-          <li class="masthead__menu-item"><a href="{{ language_url | relative_url }}">{{ language_title }}</a></li>
+          {% if page.lang == 'zh-CN' %}
+          <li class="masthead__menu-item"><a href="{{ language_url | relative_url }}">English</a></li>
+          {% endif %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
