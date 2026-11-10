@@ -1,6 +1,6 @@
 ---
 permalink: /zh/
-title: "Leilei Zhang · 个人主页"
+title: "张雷雷（Leilei Zhang）"
 author_profile: true
 lang: zh-CN
 translation_url: /

@@ -25,6 +25,18 @@ profiles:
     description: "My author profile and reviewed publications."
     description_zh: "作者档案与数学评论收录的论文。"
     url: "https://mathscinet.ams.org/mathscinet/author?authorId=1380820"
+  - name: "ORCID"
+    name_zh: "ORCID"
+    icon: "ai ai-orcid ai-fw"
+    description: "Researcher identifier and public research record."
+    description_zh: "研究者标识与公开学术档案。"
+    url: "https://orcid.org/0000-0002-0783-4820"
+  - name: "ResearchGate"
+    name_zh: "ResearchGate"
+    icon: "fab fa-researchgate fa-fw"
+    description: "Research profile and publications."
+    description_zh: "研究档案与论文。"
+    url: "https://www.researchgate.net/profile/Leilei_Zhang21?ev=hdr_xprf"
 
 # Use the latest arXiv title and authors; date is the first submission date.
 # Manuscripts are displayed newest first. pdf_url is optional.
