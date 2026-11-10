@@ -10,8 +10,7 @@ redirect_from:
   - /about.html
 ---
 
-**JSPS Postdoctoral Fellow**<br>
-[Yokohama National University](https://www.ynu.ac.jp/english/)
+**JSPS Postdoctoral Fellow**, [Yokohama National University](https://www.ynu.ac.jp/english/)
 
 Welcome to my homepage. I work in graph theory and combinatorics, with particular interests in Hamiltonian properties, connectivity, line graphs, and hypergraphs.
 
