@@ -1,0 +1,98 @@
+/* Sections shared by the English and Chinese academic pages. */
+.page__content [id],
+.publications-fold {
+  scroll-margin-top: 6rem;
+}
+
+.publications-fold {
+  clear: both;
+  margin: 2rem 0;
+  border: 1px solid var(--global-border-color);
+  border-radius: 6px;
+
+  > summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker { display: none; }
+    &:focus-visible { outline: 2px solid var(--global-link-color); outline-offset: 4px; }
+
+    h2 {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 1.3em;
+    }
+  }
+
+  &[open] > summary { border-bottom: 1px solid var(--global-border-color); }
+  .fold-count { margin-left: 0.3em; font-size: 0.65em; font-weight: normal; color: var(--global-text-color-light); }
+  .fold-action { display: flex; align-items: center; gap: 0.65em; font-size: 0.8em; white-space: nowrap; }
+  .fold-symbol::before { content: "+"; font-size: 1.5em; }
+  .fold-open-label { display: none; }
+  &[open] .fold-open-label { display: inline; }
+  &[open] .fold-closed-label { display: none; }
+  &[open] .fold-symbol::before { content: "−"; }
+  &__content { padding: 1.2rem; }
+  .publication-list li { margin-bottom: 1.2rem; }
+}
+
+.academic-sections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1.5rem 0 2rem;
+
+  .academic-section-link {
+    display: block;
+    padding: 1rem;
+    border: 1px solid var(--global-border-color);
+    border-radius: 6px;
+    color: var(--global-text-color);
+    text-decoration: none;
+
+    &:hover { border-color: var(--global-link-color); text-decoration: none; }
+    &:focus-visible { outline: 2px solid var(--global-link-color); outline-offset: 3px; }
+    strong { display: flex; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.35rem; }
+    > span { display: block; font-size: 0.85em; line-height: 1.5; color: var(--global-text-color-light); }
+  }
+}
+
+.section-note,
+.academic-entry time,
+.academic-talks time { color: var(--global-text-color-light); font-size: 0.85em; }
+
+.academic-empty { padding: 1.2rem; border-left: 3px solid var(--global-border-color); }
+.academic-empty p { margin-bottom: 0; }
+.academic-entry { padding: 1.5rem 0; border-bottom: 1px solid var(--global-border-color); }
+.academic-entry h2 { margin-top: 0.6rem; }
+.academic-entry img { max-width: 100%; height: auto; border-radius: 4px; }
+.academic-profile { padding: 0.25rem 0 1.2rem; }
+.academic-profile h2 { margin-top: 1.2rem; }
+.academic-profile p { margin-bottom: 0.4rem; }
+.academic-pending { color: var(--global-text-color-light); font-size: 0.85em; }
+.academic-talks { padding-left: 1.4rem; }
+.academic-talks > li { padding: 0.8rem 0 1.2rem; }
+.academic-talks h3 { margin: 0.45rem 0; font-size: 1.05em; }
+.academic-talks p { margin-bottom: 0.35rem; }
+.academic-entry-links { font-size: 0.85em; }
+
+@media (max-width: 560px) {
+  .academic-sections { grid-template-columns: 1fr; }
+  .publications-fold > summary { padding: 0.9rem; }
+  .publications-fold__content { padding: 0.9rem; }
+  .publications-fold .fold-action { font-size: 0.75em; }
+}
+
+@media print {
+  .academic-sections { display: none; }
+  .publications-fold { border: 0; }
+  .publications-fold > summary .fold-action { display: none; }
+  .publications-fold > .publications-fold__content { display: block !important; }
+  .publication-list li { break-inside: avoid; }
+}

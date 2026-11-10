@@ -1,0 +1,73 @@
+# Shared content for the English and Chinese pages.
+# Add each personal profile URL between the quotes when available.
+profiles:
+  - name: "Google Scholar"
+    name_zh: "Google Scholar（谷歌学术）"
+    description: "Publications and citations."
+    description_zh: "论文与引用信息。"
+    url: ""
+  - name: "University profile"
+    name_zh: "学校个人主页"
+    description: "My personal page at Yokohama National University."
+    description_zh: "我在横滨国立大学的个人主页。"
+    url: ""
+  - name: "MathSciNet / Mathematical Reviews"
+    name_zh: "MathSciNet / Mathematical Reviews"
+    description: "My author profile and reviewed publications."
+    description_zh: "作者档案与数学评论收录的论文。"
+    url: ""
+
+# Add updates in the format below; newest dates are displayed first.
+# - date: "2026-11-10"
+#   title: "Your update title"
+#   title_zh: "学术日常标题"
+#   body: "Your update in English. Markdown is supported."
+#   body_zh: "中文内容，支持 Markdown。"
+#   image: "/images/your-photo.jpg"
+#   image_alt: "A description of the photo"
+#   image_alt_zh: "图片说明"
+updates: []
+
+# Add talks in the same format. slides_url is optional.
+talks:
+  - date: "2025-11-07"
+    title: "Further results on the number of cliques in graphs covered by long cycles"
+    event: "37th Workshop on Topological Graph Theory"
+    event_zh: "第37届拓扑图论研讨会"
+    location: "Yokohama, Japan"
+    location_zh: "日本横滨"
+    programme_url: "https://tgt.ynu.ac.jp/tgt37program_ver2.pdf"
+    slides_url: ""
+
+cv:
+  # Upload the full CV PDF, then set its path here, e.g. /files/leilei-zhang-cv.pdf.
+  pdf_url: ""
+  research:
+    - en: "Hamiltonian graph theory and connectivity"
+      zh: "哈密尔顿图论与图的连通性"
+    - en: "Line graphs and hypergraphs"
+      zh: "线图与超图"
+    - en: "Extremal and structural graph theory"
+      zh: "极值与结构图论"
+
+sections:
+  - path: "/academic-life/"
+    title: "Academic Life"
+    title_zh: "学术日常"
+    description: "Research notes, conferences and academic visits."
+    description_zh: "研究随笔、会议见闻与学术访问。"
+  - path: "/links/"
+    title: "Academic Links"
+    title_zh: "学术主页链接"
+    description: "Google Scholar, university profile and MathSciNet."
+    description_zh: "谷歌学术、学校个人主页与 MathSciNet。"
+  - path: "/talks/"
+    title: "Talks"
+    title_zh: "学术报告"
+    description: "Conference talks and seminar presentations."
+    description_zh: "会议报告与讨论班报告。"
+  - path: "/cv/"
+    title: "CV"
+    title_zh: "个人简历"
+    description: "Current position, research interests and publications."
+    description_zh: "现任职位、研究方向与论文列表。"

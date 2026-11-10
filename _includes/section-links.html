@@ -1,0 +1,10 @@
+{% assign is_chinese = false %}{% if page.lang == 'zh-CN' %}{% assign is_chinese = true %}{% endif %}
+<nav class="academic-sections" aria-label="{% if is_chinese %}主页栏目{% else %}Explore the website{% endif %}">
+  {% for section in site.data.academic.sections %}
+  {% assign section_url = section.path %}{% if is_chinese %}{% assign section_url = section.path | prepend: '/zh' %}{% endif %}
+  <a class="academic-section-link" href="{{ section_url | relative_url }}">
+    <strong>{% if is_chinese %}{{ section.title_zh }}{% else %}{{ section.title }}{% endif %}<span aria-hidden="true">→</span></strong>
+    <span>{% if is_chinese %}{{ section.description_zh }}{% else %}{{ section.description }}{% endif %}</span>
+  </a>
+  {% endfor %}
+</nav>

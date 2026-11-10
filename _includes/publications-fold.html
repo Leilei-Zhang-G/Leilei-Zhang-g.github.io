@@ -1,0 +1,11 @@
+{% assign is_chinese = false %}{% if page.lang == 'zh-CN' %}{% assign is_chinese = true %}{% endif %}
+<details class="publications-fold" id="publications">
+  <summary>
+    <h2>{% if is_chinese %}论文{% else %}Publications{% endif %} <span class="fold-count">{{ site.data.publications | size }}</span></h2>
+    <span class="fold-action"><span class="fold-closed-label">{% if is_chinese %}展开列表{% else %}Show list{% endif %}</span><span class="fold-open-label">{% if is_chinese %}收起列表{% else %}Hide list{% endif %}</span><span class="fold-symbol" aria-hidden="true"></span></span>
+  </summary>
+  <div class="publications-fold__content">
+    <p class="section-note">{% if is_chinese %}按期刊卷期年份倒序排列。{% else %}Listed by journal year, most recent first.{% endif %}</p>
+    {% include publication-list.html %}
+  </div>
+</details>

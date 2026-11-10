@@ -1,0 +1,16 @@
+{% assign is_chinese = false %}{% if page.lang == 'zh-CN' %}{% assign is_chinese = true %}{% endif %}
+{% assign talks = site.data.academic.talks | sort: 'date' | reverse %}
+{% if talks.size > 0 %}
+<ol class="academic-talks" reversed>
+  {% for talk in talks %}
+  <li>
+    <time datetime="{{ talk.date | date: '%Y-%m-%d' }}">{{ talk.date | date: '%Y-%m-%d' }}</time>
+    <h3>{{ talk.title | escape }}</h3>
+    <p>{% if is_chinese %}{{ talk.event_zh | default: talk.event | escape }} · {{ talk.location_zh | default: talk.location | escape }}{% else %}{{ talk.event | escape }} · {{ talk.location | escape }}{% endif %}</p>
+    <p class="academic-entry-links">{% if talk.programme_url and talk.programme_url != '' %}<a href="{{ talk.programme_url | escape }}">{% if is_chinese %}会议日程{% else %}Programme{% endif %}</a>{% endif %}{% if talk.slides_url and talk.slides_url != '' %}{% if talk.programme_url and talk.programme_url != '' %} · {% endif %}<a href="{{ talk.slides_url | relative_url }}">{% if is_chinese %}报告幻灯片{% else %}Slides{% endif %}</a>{% endif %}</p>
+  </li>
+  {% endfor %}
+</ol>
+{% else %}
+<div class="academic-empty"><p>{% if is_chinese %}报告列表正在整理中。{% else %}The talk list is being prepared.{% endif %}</p></div>
+{% endif %}

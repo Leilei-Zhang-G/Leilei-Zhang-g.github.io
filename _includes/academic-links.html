@@ -1,0 +1,19 @@
+{% assign is_chinese = false %}{% if page.lang == 'zh-CN' %}{% assign is_chinese = true %}{% endif %}
+<div class="academic-profile-list">
+  {% for profile in site.data.academic.profiles %}
+  <section class="academic-profile">
+    <h2>{% if is_chinese %}{{ profile.name_zh | escape }}{% else %}{{ profile.name | escape }}{% endif %}</h2>
+    <p>{% if is_chinese %}{{ profile.description_zh }}{% else %}{{ profile.description }}{% endif %}</p>
+    {% if profile.url and profile.url != '' %}
+    <a href="{{ profile.url | escape }}">{% if is_chinese %}访问个人主页{% else %}Visit profile{% endif %} <span aria-hidden="true">↗</span></a>
+    {% else %}
+    <span class="academic-pending">{% if is_chinese %}个人主页链接待补充{% else %}Profile link to be added{% endif %}</span>
+    {% endif %}
+  </section>
+  {% endfor %}
+</div>
+<h2>{% if is_chinese %}其他链接{% else %}Other links{% endif %}</h2>
+<ul>
+  <li><a href="{{ site.author.employer_url | escape }}">{% if is_chinese %}横滨国立大学官网{% else %}Yokohama National University — official website{% endif %}</a></li>
+  <li><a href="https://github.com/{{ site.author.github }}">GitHub</a></li>
+</ul>

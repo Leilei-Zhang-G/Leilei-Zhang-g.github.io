@@ -190,7 +190,6 @@ exclude:
   - _data/cv.json
   - _pages/cv-json.md
   - _pages/publications.html
-  - _pages/cv.md
   - _pages/teaching.html
   - _pages/page-archive.html
   - _pages/non-menu-page.md

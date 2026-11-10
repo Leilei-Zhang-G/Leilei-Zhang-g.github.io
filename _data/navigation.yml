@@ -1,10 +1,31 @@
-# Main navigation for the academic homepage.
+# Main navigation, with matching English and Chinese sections.
 main:
-  - title: "Research"
-    url: /#research
-  - title: "Publications"
-    url: /#publications
-  - title: "Contact"
-    url: /#contact
-  - title: "中文"
-    url: /zh/
+- title: Research
+  url: /#research
+- title: Publications
+  url: /#publications
+- title: Academic Life
+  url: /academic-life/
+- title: Links
+  url: /links/
+- title: Talks
+  url: /talks/
+- title: CV
+  url: /cv/
+- title: Contact
+  url: /#contact
+zh:
+- title: 研究方向
+  url: /zh/#research
+- title: 论文
+  url: /zh/#publications
+- title: 学术日常
+  url: /zh/academic-life/
+- title: 学术链接
+  url: /zh/links/
+- title: 学术报告
+  url: /zh/talks/
+- title: 简历
+  url: /zh/cv/
+- title: 联系
+  url: /zh/#contact
