@@ -317,6 +317,10 @@
     font-size: $type-size-5;
     text-decoration: none;
 
+    &.author__employer {
+      white-space: normal;
+    }
+
     &:hover {
       text-decoration: underline;
     }
