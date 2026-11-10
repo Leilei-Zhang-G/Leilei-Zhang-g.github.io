@@ -8,11 +8,8 @@ html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
   background-color: var(--global-bg-color);
+  /* Keep the type scale compact and consistent across screen sizes. */
   font-size: 16px;
-
-  @include breakpoint($medium) {
-    font-size: 18px;
-  }
 
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
