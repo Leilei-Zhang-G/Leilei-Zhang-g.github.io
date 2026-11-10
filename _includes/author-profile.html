@@ -30,6 +30,11 @@
       {% if author.employer %}
         <li class="author__desktop">{% if author.employer_url %}<a class="author__employer" href="{{ author.employer_url | escape }}"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer | escape }}</a>{% else %}<i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer | escape }}{% endif %}</li>
       {% endif %}
+      {% for profile in site.data.academic.profiles %}
+        {% if profile.url and profile.url != '' %}
+        <li><a href="{{ profile.url | escape }}" title="{% if page.lang == 'zh-CN' %}{{ profile.name_zh | escape }}{% else %}{{ profile.name | escape }}{% endif %}"><i class="{{ profile.icon | default: 'fas fa-link fa-fw' }} icon-pad-right" aria-hidden="true"></i>{% if page.lang == 'zh-CN' %}{{ profile.sidebar_name_zh | default: profile.name_zh | escape }}{% else %}{{ profile.sidebar_name | default: profile.name | escape }}{% endif %}</a></li>
+        {% endif %}
+      {% endfor %}
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}

@@ -82,10 +82,14 @@
 .academic-profile h2 { margin-top: 1.2rem; }
 .academic-profile p { margin-bottom: 0.4rem; }
 .academic-pending { color: var(--global-text-color); font-size: 0.85em; }
-.academic-talks { margin: 0.8rem 0 1rem; padding-left: 1.4rem; }
-.academic-talks > li { margin: 0; padding: 0.35rem 0 0.6rem; }
-.academic-talks h3 { margin: 0.15rem 0; font-size: 1.05em; line-height: 1.3; }
-.academic-talks p { margin: 0.1rem 0 0; line-height: 1.35; }
+.academic-talks,
+.manuscript-list { margin: 0.8rem 0 1rem; padding-left: 1.4rem; }
+.academic-talks > li,
+.manuscript-list > li { margin: 0; padding: 0.35rem 0 0.6rem; }
+.academic-talks h3,
+.manuscript-list h3 { margin: 0.15rem 0; font-size: 1.05em; line-height: 1.3; }
+.academic-talks p,
+.manuscript-list p { margin: 0.1rem 0 0; line-height: 1.35; }
 .academic-entry-links { font-size: 0.85em; }
 
 .cv-list {

@@ -1,0 +1,18 @@
+{% assign is_chinese = false %}{% if page.lang == 'zh-CN' %}{% assign is_chinese = true %}{% endif %}
+{% assign manuscripts = site.data.academic.manuscripts %}
+{% if manuscripts.size > 0 %}
+<ol class="manuscript-list" reversed>
+  {% for manuscript in manuscripts %}
+  <li>
+    <h3>{{ manuscript.title | escape }}</h3>
+    {% if manuscript.authors.size > 0 %}<p>{{ manuscript.authors | join: ', ' | escape }}</p>{% endif %}
+    {% if manuscript.year %}<p class="section-note">{{ manuscript.year | escape }}</p>{% endif %}
+    {% if manuscript.arxiv_url != blank or manuscript.pdf_url != blank %}
+    <p class="academic-entry-links">{% if manuscript.arxiv_url and manuscript.arxiv_url != '' %}<a href="{{ manuscript.arxiv_url | escape }}">arXiv</a>{% endif %}{% if manuscript.pdf_url and manuscript.pdf_url != '' %}{% if manuscript.arxiv_url and manuscript.arxiv_url != '' %} · {% endif %}<a href="{{ manuscript.pdf_url | relative_url }}">PDF</a>{% endif %}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ol>
+{% else %}
+<div class="academic-empty"><p>{% if is_chinese %}手稿信息待补充。{% else %}Manuscript details will be added here.{% endif %}</p></div>
+{% endif %}

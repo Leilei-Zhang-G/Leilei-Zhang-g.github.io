@@ -3,19 +3,31 @@
 profiles:
   - name: "Google Scholar"
     name_zh: "Google Scholar（谷歌学术）"
+    sidebar_name: "Google Scholar"
+    sidebar_name_zh: "Google 学术"
+    icon: "ai ai-google-scholar ai-fw"
     description: "Publications and citations."
     description_zh: "论文与引用信息。"
     url: "https://scholar.google.com/citations?user=dWvA8NQAAAAJ&hl=en"
   - name: "University profile"
     name_zh: "学校个人主页"
+    sidebar_name: "CCNU profile"
+    sidebar_name_zh: "华中师大个人主页"
+    icon: "fas fa-building-columns fa-fw"
     description: "My personal page at the School of Mathematics and Statistics, Central China Normal University."
     description_zh: "我在华中师范大学数学与统计学学院的个人主页。"
     url: "https://maths.ccnu.edu.cn/info/2011/38761.htm"
   - name: "MathSciNet / Mathematical Reviews"
     name_zh: "MathSciNet / Mathematical Reviews"
+    sidebar_name: "MathSciNet"
+    sidebar_name_zh: "MathSciNet"
+    icon: "fas fa-book-open fa-fw"
     description: "My author profile and reviewed publications."
     description_zh: "作者档案与数学评论收录的论文。"
     url: "https://mathscinet.ams.org/mathscinet/author?authorId=1380820"
+
+# Add manuscripts with title, authors, year, arxiv_url and pdf_url as available.
+manuscripts: []
 
 # Add updates in the format below; newest dates are displayed first.
 # - date: "2026-11-10"
@@ -179,16 +191,16 @@ cv:
       zh: "极值与结构图论"
 
 sections:
+  - path: "/manuscripts/"
+    title: "Manuscripts"
+    title_zh: "手稿"
+    description: "Manuscripts and preprints."
+    description_zh: "论文手稿与预印本。"
   - path: "/academic-life/"
     title: "Academic Life"
     title_zh: "学术日常"
     description: "Research notes, conferences and academic visits."
     description_zh: "研究随笔、会议见闻与学术访问。"
-  - path: "/links/"
-    title: "Academic Links"
-    title_zh: "学术主页链接"
-    description: "Google Scholar, university profile and MathSciNet."
-    description_zh: "谷歌学术、学校个人主页与 MathSciNet。"
   - path: "/talks/"
     title: "Talks"
     title_zh: "学术报告"

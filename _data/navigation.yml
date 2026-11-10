@@ -4,10 +4,10 @@ main:
   url: /#research
 - title: Publications
   url: /#publications
+- title: Manuscripts
+  url: /manuscripts/
 - title: Academic Life
   url: /academic-life/
-- title: Links
-  url: /links/
 - title: Talks
   url: /talks/
 - title: CV
@@ -17,10 +17,10 @@ zh:
   url: /zh/#research
 - title: 论文
   url: /zh/#publications
+- title: 手稿
+  url: /zh/manuscripts/
 - title: 学术日常
   url: /zh/academic-life/
-- title: 学术链接
-  url: /zh/links/
 - title: 学术报告
   url: /zh/talks/
 - title: 简历
