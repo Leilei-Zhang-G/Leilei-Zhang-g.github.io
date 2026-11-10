@@ -6,6 +6,16 @@
 {% endif %}
 <h2>{% if is_chinese %}现任职位{% else %}Current position{% endif %}</h2>
 <p><strong>{% if is_chinese %}{{ site.data.academic.cv.name_zh | escape }} · {% endif %}{{ site.author.name | escape }}</strong><br>{{ site.author.bio | escape }}<br><a href="{{ site.author.employer_url | escape }}">{{ site.author.employer | escape }}</a></p>
+<h2>{% if is_chinese %}工作经历{% else %}Work experience{% endif %}</h2>
+<ul class="cv-list">
+  {% for item in site.data.academic.cv.appointments %}
+  <li>
+    <p class="section-note">{% if is_chinese %}{{ item.dates_zh | escape }}{% else %}{{ item.dates | escape }}{% endif %}</p>
+    <p><strong>{% if is_chinese %}{{ item.title_zh | escape }}{% else %}{{ item.title | escape }}{% endif %}</strong></p>
+    <p>{% if is_chinese %}{{ item.institution_zh | escape }}{% else %}{{ item.institution | escape }}{% endif %}</p>
+  </li>
+  {% endfor %}
+</ul>
 <h2>{% if is_chinese %}教育经历{% else %}Education{% endif %}</h2>
 <ul class="cv-list">
   {% for item in site.data.academic.cv.education %}
@@ -16,18 +26,6 @@
   </li>
   {% endfor %}
 </ul>
-<h2>{% if is_chinese %}任职经历{% else %}Academic appointments{% endif %}</h2>
-<ul class="cv-list">
-  {% for item in site.data.academic.cv.appointments %}
-  <li>
-    <p class="section-note">{% if is_chinese %}{{ item.dates_zh | escape }}{% else %}{{ item.dates | escape }}{% endif %}</p>
-    <p><strong>{% if is_chinese %}{{ item.title_zh | escape }}{% else %}{{ item.title | escape }}{% endif %}</strong></p>
-    <p>{% if is_chinese %}{{ item.institution_zh | escape }}{% else %}{{ item.institution | escape }}{% endif %}</p>
-  </li>
-  {% endfor %}
-</ul>
-<h2>{% if is_chinese %}研究方向{% else %}Research interests{% endif %}</h2>
-<ul>{% for interest in site.data.academic.cv.research %}<li>{% if is_chinese %}{{ interest.zh }}{% else %}{{ interest.en }}{% endif %}</li>{% endfor %}</ul>
 <h2>{% if is_chinese %}科研项目{% else %}Research grants{% endif %}</h2>
 <ul class="cv-list">
   {% for item in site.data.academic.cv.grants %}
