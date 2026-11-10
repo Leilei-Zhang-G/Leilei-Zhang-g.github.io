@@ -1,7 +1,8 @@
 ---
 layout: single
-title: 手稿
+title: 投稿论文
 permalink: /zh/manuscripts/
+redirect_to: /zh/research/#submissions
 author_profile: true
 lang: zh-CN
 translation_url: /manuscripts/

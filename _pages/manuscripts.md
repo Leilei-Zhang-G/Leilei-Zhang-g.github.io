@@ -1,7 +1,8 @@
 ---
 layout: single
-title: Manuscripts
+title: Submissions
 permalink: /manuscripts/
+redirect_to: /research/#submissions
 author_profile: true
 lang: en-US
 translation_url: /zh/manuscripts/

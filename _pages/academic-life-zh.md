@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 学术日常
+title: 动态
 permalink: /zh/academic-life/
 author_profile: true
 lang: zh-CN

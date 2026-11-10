@@ -1,27 +1,19 @@
 # Main navigation, with matching English and Chinese sections.
 main:
 - title: Research
-  url: /#research
-- title: Publications
-  url: /#publications
-- title: Manuscripts
-  url: /manuscripts/
+  url: /research/
 - title: CV
   url: /cv/
-- title: Academic Life
+- title: News
   url: /academic-life/
 - title: Talks
   url: /talks/
 zh:
-- title: 研究方向
-  url: /zh/#research
-- title: 论文
-  url: /zh/#publications
-- title: 手稿
-  url: /zh/manuscripts/
+- title: 研究
+  url: /zh/research/
 - title: 简历
   url: /zh/cv/
-- title: 学术日常
+- title: 动态
   url: /zh/academic-life/
 - title: 学术报告
   url: /zh/talks/

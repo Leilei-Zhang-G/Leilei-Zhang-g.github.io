@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Academic Life
+title: News
 permalink: /academic-life/
 author_profile: true
 lang: en-US
