@@ -31,7 +31,7 @@
   }
 
   &[open] > summary { border-bottom: 1px solid var(--global-border-color); }
-  .fold-count { margin-left: 0.3em; font-size: 0.65em; font-weight: normal; color: var(--global-text-color-light); }
+  .fold-count { margin-left: 0.3em; font-size: 0.65em; font-weight: normal; color: var(--global-text-color); }
   .fold-action { display: flex; align-items: center; gap: 0.65em; font-size: 0.8em; white-space: nowrap; }
   .fold-symbol::before { content: "+"; font-size: 1.5em; }
   .fold-open-label { display: none; }
@@ -59,13 +59,13 @@
     &:hover { border-color: var(--global-link-color); text-decoration: none; }
     &:focus-visible { outline: 2px solid var(--global-link-color); outline-offset: 3px; }
     strong { display: flex; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.35rem; }
-    > span { display: block; font-size: 0.85em; line-height: 1.5; color: var(--global-text-color-light); }
+    > span { display: block; font-size: 0.85em; line-height: 1.5; color: var(--global-text-color); }
   }
 }
 
 .section-note,
 .academic-entry time,
-.academic-talks time { color: var(--global-text-color-light); font-size: 0.85em; }
+.academic-talks time { color: var(--global-text-color); font-size: 0.85em; }
 
 .academic-empty { padding: 1.2rem; border-left: 3px solid var(--global-border-color); }
 .academic-empty p { margin-bottom: 0; }
@@ -75,7 +75,7 @@
 .academic-profile { padding: 0.25rem 0 1.2rem; }
 .academic-profile h2 { margin-top: 1.2rem; }
 .academic-profile p { margin-bottom: 0.4rem; }
-.academic-pending { color: var(--global-text-color-light); font-size: 0.85em; }
+.academic-pending { color: var(--global-text-color); font-size: 0.85em; }
 .academic-talks { padding-left: 1.4rem; }
 .academic-talks > li { padding: 0.8rem 0 1.2rem; }
 .academic-talks h3 { margin: 0.45rem 0; font-size: 1.05em; }
