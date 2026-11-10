@@ -16,9 +16,9 @@ Welcome to my homepage. I work in graph theory and combinatorics, with particula
 
 ## Research interests {#research}
 
-- **Hamiltonian graph theory.** Hamiltonian cycles and paths, degree conditions, and the relation between connectivity and Hamiltonicity.
-- **Line graphs and hypergraphs.** Structural properties and Hamiltonian problems in line graphs of graphs and 3-hypergraphs.
-- **Extremal and structural graph theory.** Cycles, graph connectivity, and spanning structures.
+- **Hamiltonian graph theory.** Hamiltonian cycles and paths, Hamiltonian-connectedness, and sufficient conditions involving degree, connectivity, and domination.
+- **Extremal graph theory.** Extremal problems involving cycles, paths, matchings, and linear forests, including sharp bounds on the number of edges and cliques and the characterization of extremal graphs.
+- **Structural graph theory.** Graph connectivity, vertex cuts, and local structure, with particular interest in claw-free graphs and line graphs of graphs and 3-hypergraphs.
 
 {% include publications-fold.html %}
 
