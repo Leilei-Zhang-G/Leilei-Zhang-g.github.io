@@ -1,0 +1,129 @@
+# Listed in reverse order by journal year. Numbers match the author's paper list.
+- number: 14
+  title: "Stability results for Berge-matching in hypergraphs"
+  authors: ["Jia-Bao Yang", "Leilei Zhang"]
+  journal: "Discrete Mathematics"
+  volume: "350"
+  year: 2027
+  article: "115456"
+  doi: "10.1016/j.disc.2026.115456"
+  arxiv: "https://arxiv.org/abs/2601.04929"
+
+- number: 13
+  title: "Further results on the number of cliques in graphs covered by long cycles"
+  authors: ["Yanan Hu", "Leilei Zhang"]
+  journal: "Discrete Mathematics"
+  volume: "350"
+  year: 2027
+  article: "115436"
+  doi: "10.1016/j.disc.2026.115436"
+
+- number: 12
+  title: "Extremal problems about the order and size of nonhamiltonian locally linear graphs"
+  authors: ["Feng Liu", "Leilei Zhang"]
+  journal: "Discrete Mathematics & Theoretical Computer Science"
+  volume: "28"
+  issue: "3"
+  year: 2026
+  article: "13"
+  doi: "10.46298/dmtcs.18029"
+  arxiv: "https://arxiv.org/abs/2402.16066"
+
+- number: 11
+  title: "The maximum size of a nonhamiltonian-connected graph with given order and minimum degree"
+  authors: ["Leilei Zhang"]
+  journal: "Discrete Applied Mathematics"
+  volume: "391"
+  year: 2026
+  pages: "108–113"
+  doi: "10.1016/j.dam.2026.04.040"
+
+- number: 10
+  title: "Graphs with Many Independent Vertex Cuts"
+  authors: ["Yanan Hu", "Xingzhi Zhan", "Leilei Zhang"]
+  journal: "Graphs and Combinatorics"
+  volume: "40"
+  year: 2024
+  article: "83"
+  doi: "10.1007/s00373-024-02811-7"
+
+- number: 9
+  title: "The maximum number of complete multipartite subgraphs in graphs with given circumference or matching number"
+  authors: ["Yuxuan Liu", "Leilei Zhang"]
+  journal: "Discrete Mathematics"
+  volume: "347"
+  year: 2024
+  article: "113734"
+  doi: "10.1016/j.disc.2023.113734"
+
+- number: 8
+  title: "The minimum Kirchhoff index of phenylene chains"
+  authors: ["Leilei Zhang"]
+  journal: "Discrete Applied Mathematics"
+  volume: "340"
+  year: 2023
+  pages: "69–75"
+  doi: "10.1016/j.dam.2023.06.043"
+
+- number: 7
+  title: "The maximum number of cliques in graphs with prescribed order, circumference and minimum degree"
+  authors: ["Leilei Zhang"]
+  journal: "European Journal of Combinatorics"
+  volume: "112"
+  year: 2023
+  article: "103728"
+  doi: "10.1016/j.ejc.2023.103728"
+
+- number: 6
+  title: "A Simple Proof of Ore’s Theorem on the Maximum Size of k-connected Graphs with Given Order and Diameter"
+  authors: ["Leilei Zhang"]
+  journal: "Graphs and Combinatorics"
+  volume: "39"
+  year: 2023
+  article: "33"
+  doi: "10.1007/s00373-023-02628-w"
+
+- number: 5
+  title: "The maximum size of a nonhamiltonian graph with given order and connectivity"
+  authors: ["Xingzhi Zhan", "Leilei Zhang"]
+  journal: "Discrete Mathematics"
+  volume: "346"
+  year: 2023
+  article: "113208"
+  doi: "10.1016/j.disc.2022.113208"
+
+- number: 4
+  title: "Further Results on the Generalized Turán Number of Spanning Linear Forests"
+  authors: ["Leilei Zhang"]
+  journal: "Bulletin of the Malaysian Mathematical Sciences Society"
+  volume: "46"
+  year: 2023
+  article: "22"
+  doi: "10.1007/s40840-022-01412-y"
+
+- number: 3
+  title: "Every 3-connected claw-free graph with domination number at most 3 is hamiltonian-connected"
+  authors: ["Petr Vrána", "Xingzhi Zhan", "Leilei Zhang"]
+  journal: "Discrete Mathematics"
+  volume: "345"
+  year: 2022
+  article: "112909"
+  doi: "10.1016/j.disc.2022.112909"
+
+- number: 2
+  title: "Two-point resistances in the generalized phenylenes"
+  authors: ["Qishun Li", "Shuchao Li", "Leilei Zhang"]
+  journal: "Journal of Mathematical Chemistry"
+  volume: "58"
+  year: 2020
+  pages: "1846–1873"
+  doi: "10.1007/s10910-020-01152-z"
+
+- number: 1
+  title: "The expected values for the Schultz index, Gutman index, multiplicative degree-Kirchhoff index and additive degree-Kirchhoff index of a random polyphenylene chain"
+  authors: ["Leilei Zhang", "Qishun Li", "Shuchao Li", "Minjie Zhang"]
+  journal: "Discrete Applied Mathematics"
+  volume: "282"
+  year: 2020
+  pages: "243–256"
+  doi: "10.1016/j.dam.2019.11.007"

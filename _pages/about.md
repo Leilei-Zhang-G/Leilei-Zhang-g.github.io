@@ -10,6 +10,9 @@ redirect_from:
 
 [中文]({{ '/zh/' | relative_url }})
 
+**JSPS Postdoctoral Fellow**<br>
+[Yokohama National University](https://www.ynu.ac.jp/english/)
+
 Welcome to my homepage. I work in graph theory and combinatorics, with particular interests in Hamiltonian properties, connectivity, line graphs, and hypergraphs.
 
 ## Research interests {#research}
@@ -20,10 +23,12 @@ Welcome to my homepage. I work in graph theory and combinatorics, with particula
 
 ## Publications {#publications}
 
-The publication list is being prepared.
+Listed by journal year, most recent first.
+
+{% include publication-list.html %}
 
 ## Contact {#contact}
 
 You can find my public repositories on [GitHub](https://github.com/Leilei-Zhang-G).
 
-<!-- Add the public affiliation, email, academic profile links, and verified publication list here when available. -->
+<!-- A public contact email and academic profile links can be added when provided. -->

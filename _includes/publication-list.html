@@ -1,0 +1,16 @@
+{% assign publication_years = site.data.publications | group_by: "year" %}
+{% for year in publication_years %}
+<h3>{{ year.name }}</h3>
+<ol reversed start="{{ year.items.first.number }}" class="publication-list">
+  {% for paper in year.items %}
+  <li value="{{ paper.number }}" id="publication-{{ paper.number }}">
+    <p>
+      <strong>{{ paper.title | escape }}</strong><br>
+      {% for author_name in paper.authors %}{% unless forloop.first %}{% if forloop.last %} and {% else %}, {% endif %}{% endunless %}{% if author_name == site.author.name %}<strong>{{ author_name | escape }}</strong>{% else %}{{ author_name | escape }}{% endif %}{% endfor %}.<br>
+      <em>{{ paper.journal | escape }}</em> <strong>{{ paper.volume }}</strong>{% if paper.issue %}({{ paper.issue }}){% endif %} ({{ paper.year }}), {% if paper.pages %}{{ paper.pages }}{% else %}{{ paper.article }}{% endif %}.<br>
+      <a href="https://doi.org/{{ paper.doi }}" aria-label="DOI: {{ paper.title | escape }}">DOI</a>{% if paper.arxiv %} · <a href="{{ paper.arxiv }}" aria-label="arXiv: {{ paper.title | escape }}">arXiv</a>{% endif %}
+    </p>
+  </li>
+  {% endfor %}
+</ol>
+{% endfor %}

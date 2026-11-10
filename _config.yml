@@ -26,9 +26,10 @@ author:
   avatar           : "https://github.com/Leilei-Zhang-G.png"
   name             : "Leilei Zhang"
   pronouns         : # example: "she/her"  
-  bio              : "Graph Theory and Combinatorics"
+  bio              : "JSPS Postdoctoral Fellow"
   location         :
-  employer         :
+  employer         : "Yokohama National University"
+  employer_url     : "https://www.ynu.ac.jp/english/"
   uri              : # URL
   email            :
 

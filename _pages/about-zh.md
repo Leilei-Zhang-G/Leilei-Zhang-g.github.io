@@ -8,6 +8,9 @@ excerpt: "图论与组合数学：哈密尔顿性质、连通度、线图与超�
 
 [English]({{ '/' | relative_url }})
 
+**JSPS Postdoctoral Fellow**<br>
+[横滨国立大学（Yokohama National University）](https://www.ynu.ac.jp/english/)
+
 欢迎来到我的个人主页。我的研究方向是图论与组合数学，主要关注图的哈密尔顿性质、连通度、线图和超图。
 
 ## 研究方向
@@ -16,12 +19,14 @@ excerpt: "图论与组合数学：哈密尔顿性质、连通度、线图与超�
 - **线图与超图。** 图和 3-超图的线图结构，以及相关的哈密尔顿问题。
 - **极值与结构图论。** 圈、图的连通性和生成结构。
 
-## 论文
+## 论文 {#publications}
 
-论文列表正在整理中。
+按期刊卷期年份倒序排列。
+
+{% include publication-list.html %}
 
 ## 联系方式
 
 我的公开代码仓库：[GitHub](https://github.com/Leilei-Zhang-G)。
 
-<!-- 可继续补充公开的单位、邮箱、学术资料链接和已核实的论文列表。 -->
+<!-- 可继续补充公开邮箱和学术资料链接。 -->
