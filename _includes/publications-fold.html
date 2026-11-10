@@ -5,7 +5,6 @@
     <span class="fold-action"><span class="fold-closed-label">{% if is_chinese %}展开列表{% else %}Show list{% endif %}</span><span class="fold-open-label">{% if is_chinese %}收起列表{% else %}Hide list{% endif %}</span><span class="fold-symbol" aria-hidden="true"></span></span>
   </summary>
   <div class="publications-fold__content">
-    <p class="section-note">{% if is_chinese %}按期刊卷期年份倒序排列。{% else %}Listed by journal year, most recent first.{% endif %}</p>
     {% include publication-list.html %}
   </div>
 </details>

@@ -1,8 +1,5 @@
-{% assign publication_years = site.data.publications | group_by: "year" %}
-{% for year in publication_years %}
-<h3>{{ year.name }}</h3>
-<ol reversed start="{{ year.items.first.number }}" class="publication-list">
-  {% for paper in year.items %}
+<ol reversed class="publication-list">
+  {% for paper in site.data.publications %}
   <li value="{{ paper.number }}" id="publication-{{ paper.number }}">
     <p>
       <strong>{{ paper.title | escape }}</strong><br>
@@ -13,4 +10,3 @@
   </li>
   {% endfor %}
 </ol>
-{% endfor %}
