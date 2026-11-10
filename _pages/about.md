@@ -14,6 +14,10 @@ redirect_from:
 
 Welcome to my homepage. I work in graph theory and combinatorics, with particular interests in extremal problems related to cycles and paths in structural graph theory.
 
+I joined Central China Normal University as a lecturer in July 2024. Since March 2025, I have been a JSPS International Research Fellow at Yokohama National University, working mainly with Kenta Ozeki.
+
+I enjoy connecting with people 😁 Feel free to [e-mail me](mailto:{{ site.author.email }}) if you'd like to discuss research topics.
+
 ## Research interests {#research}
 
 - **Hamiltonian graph theory.** Hamiltonian cycles and paths, Hamiltonian-connectedness, and sufficient conditions involving degree, connectivity, and domination.

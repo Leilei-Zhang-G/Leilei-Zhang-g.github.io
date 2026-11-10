@@ -6,12 +6,12 @@ main:
   url: /#publications
 - title: Manuscripts
   url: /manuscripts/
+- title: CV
+  url: /cv/
 - title: Academic Life
   url: /academic-life/
 - title: Talks
   url: /talks/
-- title: CV
-  url: /cv/
 zh:
 - title: 研究方向
   url: /zh/#research
@@ -19,9 +19,9 @@ zh:
   url: /zh/#publications
 - title: 手稿
   url: /zh/manuscripts/
+- title: 简历
+  url: /zh/cv/
 - title: 学术日常
   url: /zh/academic-life/
 - title: 学术报告
   url: /zh/talks/
-- title: 简历
-  url: /zh/cv/

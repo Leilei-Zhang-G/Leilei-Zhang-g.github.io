@@ -23,6 +23,7 @@
     <p class="section-note">{{ item.dates | escape }}</p>
     <p><strong>{% if is_chinese %}{{ item.institution_zh | escape }}{% else %}{{ item.institution | escape }}{% endif %}</strong></p>
     <p>{% if is_chinese %}{{ item.degree_zh | escape }}{% else %}{{ item.degree | escape }}{% endif %}</p>
+    {% if item.supervisor %}<p class="section-note">{% if is_chinese %}导师：{{ item.supervisor_zh | default: item.supervisor | escape }}{% else %}Supervisor: {{ item.supervisor | escape }}{% endif %}</p>{% endif %}
   </li>
   {% endfor %}
 </ul>
