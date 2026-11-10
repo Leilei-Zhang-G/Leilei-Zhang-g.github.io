@@ -8,6 +8,4 @@ translation_url: /academic-life/
 excerpt: 研究随笔、会议见闻与学术访问。
 ---
 
-[English]({{ '/academic-life/' | relative_url }})
-
 {% include academic-life.html %}

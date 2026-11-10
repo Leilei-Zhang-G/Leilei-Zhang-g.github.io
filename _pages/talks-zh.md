@@ -8,8 +8,6 @@ translation_url: /talks/
 excerpt: 会议报告与讨论班报告。
 ---
 
-[English]({{ '/talks/' | relative_url }})
-
 会议报告与讨论班报告。
 
 {% include talk-list.html %}

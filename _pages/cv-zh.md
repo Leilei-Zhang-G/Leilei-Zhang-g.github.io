@@ -8,6 +8,4 @@ translation_url: /cv/
 excerpt: 教育经历、工作经历、科研项目与简历下载。
 ---
 
-[English]({{ '/cv/' | relative_url }})
-
 {% include cv-content.html %}

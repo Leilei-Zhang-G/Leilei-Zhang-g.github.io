@@ -7,8 +7,6 @@ translation_url: /
 excerpt: "图论与组合数学：哈密尔顿性质、连通度、线图与超图。"
 ---
 
-[English]({{ '/' | relative_url }})
-
 **JSPS Postdoctoral Fellow**<br>
 [横滨国立大学（Yokohama National University）](https://www.ynu.ac.jp/english/)
 
