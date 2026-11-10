@@ -1,12 +1,42 @@
 {% assign is_chinese = false %}{% if page.lang == 'zh-CN' %}{% assign is_chinese = true %}{% endif %}
 {% if site.data.academic.cv.pdf_url and site.data.academic.cv.pdf_url != '' %}
-<p><a class="btn btn--primary" href="{{ site.data.academic.cv.pdf_url | relative_url }}">{% if is_chinese %}下载完整简历（PDF）{% else %}Download full CV (PDF){% endif %}</a></p>
+<p><a class="btn btn--primary" href="{{ site.data.academic.cv.pdf_url | relative_url }}" download="Leilei-Zhang-CV-2026.pdf">{% if is_chinese %}下载中文简历（PDF，2026版）{% else %}Download CV (PDF, Chinese, 2026){% endif %}</a></p>
 {% else %}
 <p class="section-note">{% if is_chinese %}以下是我的简要学术信息，完整简历 PDF 将在整理后补充。{% else %}A brief academic overview is provided below. A full CV in PDF format will be added soon.{% endif %}</p>
 {% endif %}
 <h2>{% if is_chinese %}现任职位{% else %}Current position{% endif %}</h2>
-<p><strong>{{ site.author.name | escape }}</strong><br>{{ site.author.bio | escape }}<br><a href="{{ site.author.employer_url | escape }}">{{ site.author.employer | escape }}</a></p>
+<p><strong>{% if is_chinese %}{{ site.data.academic.cv.name_zh | escape }} · {% endif %}{{ site.author.name | escape }}</strong><br>{{ site.author.bio | escape }}<br><a href="{{ site.author.employer_url | escape }}">{{ site.author.employer | escape }}</a></p>
+<h2>{% if is_chinese %}教育经历{% else %}Education{% endif %}</h2>
+<ul class="cv-list">
+  {% for item in site.data.academic.cv.education %}
+  <li>
+    <p class="section-note">{{ item.dates | escape }}</p>
+    <p><strong>{% if is_chinese %}{{ item.institution_zh | escape }}{% else %}{{ item.institution | escape }}{% endif %}</strong></p>
+    <p>{% if is_chinese %}{{ item.degree_zh | escape }}{% else %}{{ item.degree | escape }}{% endif %}</p>
+  </li>
+  {% endfor %}
+</ul>
+<h2>{% if is_chinese %}任职经历{% else %}Academic appointments{% endif %}</h2>
+<ul class="cv-list">
+  {% for item in site.data.academic.cv.appointments %}
+  <li>
+    <p class="section-note">{% if is_chinese %}{{ item.dates_zh | escape }}{% else %}{{ item.dates | escape }}{% endif %}</p>
+    <p><strong>{% if is_chinese %}{{ item.title_zh | escape }}{% else %}{{ item.title | escape }}{% endif %}</strong></p>
+    <p>{% if is_chinese %}{{ item.institution_zh | escape }}{% else %}{{ item.institution | escape }}{% endif %}</p>
+  </li>
+  {% endfor %}
+</ul>
 <h2>{% if is_chinese %}研究方向{% else %}Research interests{% endif %}</h2>
 <ul>{% for interest in site.data.academic.cv.research %}<li>{% if is_chinese %}{{ interest.zh }}{% else %}{{ interest.en }}{% endif %}</li>{% endfor %}</ul>
-<h2>{% if is_chinese %}论文{% else %}Publications{% endif %}</h2>
-{% include publication-list.html %}
+<h2>{% if is_chinese %}科研项目{% else %}Research grants{% endif %}</h2>
+<ul class="cv-list">
+  {% for item in site.data.academic.cv.grants %}
+  <li>
+    <p class="section-note">{{ item.dates | escape }} · {% if is_chinese %}{{ item.role_zh | escape }}{% else %}{{ item.role | escape }}{% endif %}</p>
+    <p><strong>{% if is_chinese %}{{ item.title_zh | escape }}{% else %}{{ item.title | escape }}{% endif %}</strong></p>
+    <p>{% if is_chinese %}{{ item.funder_zh | escape }}{% else %}{{ item.funder | escape }}{% endif %}</p>
+    <p class="section-note">{% if is_chinese %}项目编号{% else %}Grant number{% endif %}: {{ item.number | escape }}</p>
+  </li>
+  {% endfor %}
+</ul>
+{% include publications-fold.html %}

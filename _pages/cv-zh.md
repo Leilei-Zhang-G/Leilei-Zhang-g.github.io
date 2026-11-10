@@ -5,7 +5,7 @@ permalink: /zh/cv/
 author_profile: true
 lang: zh-CN
 translation_url: /cv/
-excerpt: 现任职位、研究方向与论文列表。
+excerpt: 教育经历、任职经历、科研项目、论文与简历下载。
 ---
 
 [English]({{ '/cv/' | relative_url }})

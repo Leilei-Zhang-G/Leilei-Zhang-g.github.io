@@ -82,6 +82,13 @@
 .academic-talks p { margin-bottom: 0.35rem; }
 .academic-entry-links { font-size: 0.85em; }
 
+.cv-list {
+  list-style: none;
+  padding-left: 0;
+  > li { margin-bottom: 1.25rem; }
+  p { margin: 0.25rem 0; }
+}
+
 @media (max-width: 560px) {
   .academic-sections { grid-template-columns: 1fr; }
   .publications-fold > summary { padding: 0.9rem; }
