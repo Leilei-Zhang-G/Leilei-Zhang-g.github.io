@@ -26,8 +26,57 @@ profiles:
     description_zh: "作者档案与数学评论收录的论文。"
     url: "https://mathscinet.ams.org/mathscinet/author?authorId=1380820"
 
-# Add manuscripts with title, authors, year, arxiv_url and pdf_url as available.
-manuscripts: []
+# Use the latest arXiv title and authors; date is the first submission date.
+# Manuscripts are displayed newest first. pdf_url is optional.
+manuscripts:
+  - date: "2026-10-25"
+    year: 2026
+    title: "Extremal 3-uniform hypergraphs without generalized 4-cycles"
+    authors: ["Leilei Zhang"]
+    arxiv_id: "2610.34038"
+    arxiv_url: "https://arxiv.org/abs/2610.34038"
+  - date: "2026-10-17"
+    year: 2026
+    title: "A proof of the strong Erdős–Frankl–Füredi cover-free conjecture"
+    authors: ["Yanan Hu", "Leilei Zhang"]
+    arxiv_id: "2610.24442"
+    arxiv_url: "https://arxiv.org/abs/2610.24442"
+  - date: "2026-07-30"
+    year: 2026
+    title: "On the distinct maximal-clique sizes in k-uniform hypergraphs"
+    authors: ["Jiabao Yang", "Lixiang Yu", "Leilei Zhang"]
+    arxiv_id: "2607.27837"
+    arxiv_url: "https://arxiv.org/abs/2607.27837"
+  - date: "2026-07-03"
+    year: 2026
+    title: "Counterexamples to the Balogh-Linz-Patkós Conjecture"
+    authors: ["Jia-Bao Yang", "Leilei Zhang"]
+    arxiv_id: "2607.03026"
+    arxiv_url: "https://arxiv.org/abs/2607.03026"
+  - date: "2026-07-01"
+    year: 2026
+    title: "Further Results on the Maximum Number of Stars in Graphs with Forbidden Properties"
+    authors: ["Yuxuan Liu", "Jia-Bao Yang", "Leilei Zhang"]
+    arxiv_id: "2607.00770"
+    arxiv_url: "https://arxiv.org/abs/2607.00770"
+  - date: "2026-03-01"
+    year: 2026
+    title: "Hamiltonian Properties of 3-Connected Claw-Free Graphs and Line Graphs of 3-Hypergraphs"
+    authors: ["Kenta Ozeki", "Leilei Zhang"]
+    arxiv_id: "2603.03361"
+    arxiv_url: "https://arxiv.org/abs/2603.03361"
+  - date: "2026-02-23"
+    year: 2026
+    title: "A Note on Grünbaum's Conjecture about Longest Cycles and Paths"
+    authors: ["Masaki Kashima", "Kenta Ozeki", "Leilei Zhang"]
+    arxiv_id: "2602.19669"
+    arxiv_url: "https://arxiv.org/abs/2602.19669"
+  - date: "2024-09-16"
+    year: 2024
+    title: "The minimum size of a chordal graph with given order and minimum degree"
+    authors: ["Xingzhi Zhan", "Leilei Zhang"]
+    arxiv_id: "2409.10261"
+    arxiv_url: "https://arxiv.org/abs/2409.10261"
 
 # Add updates in the format below; newest dates are displayed first.
 # - date: "2026-11-10"
