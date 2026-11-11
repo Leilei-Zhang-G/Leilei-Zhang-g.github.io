@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% assign presentation = site.data.home.en %}
+{% if page.lang == 'zh-CN' %}{% assign presentation = site.data.home.zh %}{% endif %}
+<main id="main" class="academic-page" tabindex="-1">
+  <header class="academic-page-header">
+    <div class="site-container academic-page-header__inner">
+      <div class="academic-page-heading">
+        <p class="site-eyebrow">{{ presentation.discipline }}</p>
+        <h1>{{ page.title | escape }}</h1>
+        {% if page.excerpt %}<p class="academic-page-intro">{{ page.excerpt | strip_html | escape }}</p>{% endif %}
+      </div>
+      <div class="academic-page-graph" aria-hidden="true">{% include home-petersen.svg %}</div>
+    </div>
+  </header>
+  <div class="site-container academic-content">
+    {{ content }}
+  </div>
+</main>

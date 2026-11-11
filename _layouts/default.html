@@ -11,14 +11,16 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body{% if page.page_class %} class="{{ page.page_class | escape }}"{% endif %}>
+  <body class="academic-design{% if page.page_class %} {{ page.page_class | escape }}{% endif %}">
 
-    {% if page.layout == 'home' %}<a class="home-skip-link" href="#main">{% if page.lang == 'zh-CN' %}跳转到正文{% else %}Skip to content{% endif %}</a>{% endif %}
+    <a class="site-skip-link" href="#main">{% if page.lang == 'zh-CN' %}跳转到正文{% else %}Skip to content{% endif %}</a>
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
     {{ content }}
+
+    {% include site-contact.html %}
 
     <div class="page__footer">
       <footer>

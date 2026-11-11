@@ -1,0 +1,16 @@
+{% assign contact_text = site.data.home.en %}
+{% if page.lang == 'zh-CN' %}{% assign contact_text = site.data.home.zh %}{% endif %}
+<section class="site-contact" aria-labelledby="site-contact-title">
+  <div class="site-container site-contact-inner">
+    <div>
+      <h2 id="site-contact-title">{{ contact_text.contact_heading }}</h2>
+      <a class="site-email" href="mailto:{{ site.author.email | escape }}">{{ site.author.email }} <span aria-hidden="true">{% include home-arrow.svg %}</span></a>
+    </div>
+    <nav class="site-profiles" aria-label="{{ contact_text.profiles_label }}">
+      {% for profile in site.data.academic.profiles %}{% if profile.url and profile.url != '' %}
+      <a href="{{ profile.url | escape }}">{% if page.lang == 'zh-CN' %}{{ profile.sidebar_name_zh | default: profile.name_zh }}{% else %}{{ profile.sidebar_name | default: profile.name }}{% endif %}<span aria-hidden="true">{% include home-arrow.svg %}</span></a>
+      {% endif %}{% endfor %}
+      {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}">GitHub<span aria-hidden="true">{% include home-arrow.svg %}</span></a>{% endif %}
+    </nav>
+  </div>
+</section>

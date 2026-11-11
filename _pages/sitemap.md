@@ -1,37 +1,26 @@
 ---
-layout: archive
-title: "Sitemap"
+layout: academic
+title: Sitemap · 网站地图
 permalink: /sitemap/
-author_profile: true
+author_profile: false
+excerpt: Browse the English and Chinese pages of this website.
 ---
-
-{% include base_path %}
-
-A list of all the posts and pages found on the site. For you robots out there, there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
-
-<h2>Pages</h2>
-{% for post in site.pages %}
-  {% include archive-single.html %}
-{% endfor %}
-
-<h2>Posts</h2>
-{% for post in site.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% capture written_label %}'None'{% endcapture %}
-
-{% for collection in site.collections %}
-{% unless collection.output == false or collection.label == "posts" %}
-  {% capture label %}{{ collection.label }}{% endcapture %}
-  {% if label != written_label %}
-  <h2>{{ label }}</h2>
-  {% capture written_label %}{{ label }}{% endcapture %}
-  {% endif %}
-{% endunless %}
-{% for post in collection.docs %}
-  {% unless collection.output == false or collection.label == "posts" %}
-  {% include archive-single.html %}
-  {% endunless %}
-{% endfor %}
-{% endfor %}
+<div class="site-directory">
+  <section lang="en">
+    <h2>English</h2>
+    <ul>
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      {% for link in site.data.navigation.main %}<li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>{% endfor %}
+      <li><a href="{{ '/links/' | relative_url }}">Academic links</a></li>
+    </ul>
+  </section>
+  <section lang="zh-CN">
+    <h2>中文</h2>
+    <ul>
+      <li><a href="{{ '/zh/' | relative_url }}">首页</a></li>
+      {% for link in site.data.navigation.zh %}<li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>{% endfor %}
+      <li><a href="{{ '/zh/links/' | relative_url }}">学术主页链接</a></li>
+    </ul>
+  </section>
+</div>
+<p class="section-note"><a href="{{ '/sitemap.xml' | relative_url }}">XML sitemap</a></p>
