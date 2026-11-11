@@ -32,6 +32,21 @@ layout: default
       <div><p class="home-eyebrow">{{ home.research_label }}</p><h2 id="home-research-title">{{ home.research_heading }}</h2></div>
       <a class="home-text-link" href="{{ home.research_url | relative_url }}">{{ home.papers_link }} <span aria-hidden="true">{% include home-arrow.svg %}</span></a>
     </div>
+    <figure class="home-research-figure" id="research-diagram" aria-labelledby="research-diagram-title">
+      <a class="home-research-image-link" href="{{ '/images/qt-construction.png' | relative_url }}" target="_blank" rel="noopener" aria-label="{{ home.diagram_open_label | escape }}">
+        <img src="{{ '/images/qt-construction.png' | relative_url }}" alt="{{ home.diagram_alt | escape }}" width="2048" height="1961" loading="lazy" decoding="async">
+      </a>
+      <figcaption class="home-research-caption">
+        <p class="home-eyebrow">{{ home.diagram_label }}</p>
+        <h3 id="research-diagram-title">{{ home.diagram_heading }}</h3>
+        <p>{{ home.diagram_description }}</p>
+        <ul class="home-diagram-key" aria-label="{{ home.diagram_key_label }}">
+          <li><span class="home-diagram-dot home-diagram-dot--clique" aria-hidden="true"></span>{{ home.diagram_cliques }}</li>
+          <li><span class="home-diagram-dot home-diagram-dot--vertex" aria-hidden="true"></span>{{ home.diagram_vertices }}</li>
+        </ul>
+        <a class="home-text-link" href="{{ '/images/qt-construction.png' | relative_url }}" target="_blank" rel="noopener" aria-label="{{ home.diagram_open_label | escape }}">{{ home.diagram_full_size }} <span aria-hidden="true">{% include home-arrow.svg %}</span></a>
+      </figcaption>
+    </figure>
     <div class="home-research-grid">
       {% for interest in home.interests %}
       <article class="home-interest">

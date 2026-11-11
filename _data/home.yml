@@ -4,7 +4,7 @@ en:
   name: Leilei Zhang
   secondary_name: 张雷雷
   secondary_lang: zh-CN
-  position: JSPS Postdoctoral Fellow
+  position: JSPS International Research Fellow
   institution: Yokohama National University
   location: Yokohama, Japan
   portrait_alt: Portrait of Leilei Zhang
@@ -15,6 +15,15 @@ en:
   research_label: Research
   research_heading: Research interests
   papers_link: Publications & submissions
+  diagram_label: A graph from my research
+  diagram_heading: Line graphs & Hamiltonicity
+  diagram_description: 'The graph <i>Q</i><sub>t</sub>, built from the Petersen graph, appears in my work on Hamiltonian properties of line graphs of 3-hypergraphs.'
+  diagram_key_label: Diagram key
+  diagram_cliques: Blue circles represent cliques
+  diagram_vertices: Orange points correspond to Petersen edges
+  diagram_full_size: View full-size diagram
+  diagram_open_label: View the full-size graph diagram in a new tab
+  diagram_alt: A diagram of Q_t based on the Petersen graph, with blue circles representing cliques and orange points representing vertices associated with Petersen edges.
   interests:
     - title: Hamiltonian graph theory
       text: Hamiltonian cycles and paths, Hamiltonian-connectedness, and sufficient conditions involving degree, connectivity, and domination.
@@ -52,6 +61,15 @@ zh:
   research_label: Research
   research_heading: 研究方向
   papers_link: 发表论文与投稿
+  diagram_label: 研究图示
+  diagram_heading: 线图与哈密尔顿性质
+  diagram_description: '由 Petersen 图构造的图 <i>Q</i><sub>t</sub>，出现在我关于 3-超图线图哈密尔顿性质的研究中。'
+  diagram_key_label: 图例
+  diagram_cliques: 蓝色圆圈表示团
+  diagram_vertices: 橙色点对应 Petersen 图的边
+  diagram_full_size: 查看原图
+  diagram_open_label: 在新标签页中查看完整图示
+  diagram_alt: 基于 Petersen 图构造的 Q_t 示意图，蓝色圆圈表示团，橙色点表示与 Petersen 图的边对应的顶点。
   interests:
     - title: 哈密尔顿图论
       text: 哈密尔顿圈与路、哈密尔顿连通性，以及与度、连通度和支配有关的充分条件。
