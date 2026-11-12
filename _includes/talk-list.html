@@ -4,7 +4,7 @@
 <ol class="academic-talks" reversed>
   {% for talk in talks %}
   <li>
-    <time datetime="{{ talk.date | date: '%Y-%m-%d' }}">{{ talk.date | date: '%Y-%m-%d' }}</time>
+    <time datetime="{{ talk.date | date: '%Y-%m-%d' }}">{{ talk.date | date: '%Y-%m-%d' }}</time>{% if talk.end_date %}–<time datetime="{{ talk.end_date | date: '%Y-%m-%d' }}">{{ talk.end_date | date: '%Y-%m-%d' }}</time> <span class="section-note">{% if is_chinese %}（会议日期）{% else %}(conference dates){% endif %}</span>{% endif %}
     <h3>{{ talk.title | escape }}</h3>
     {% if is_chinese %}
       {% assign event_name = talk.event_zh | default: talk.event %}

@@ -4,7 +4,7 @@
 <div class="academic-timeline">
   {% for update in updates %}
   <article class="academic-entry">
-    <time datetime="{{ update.date | date: '%Y-%m-%d' }}">{{ update.date | date: '%Y-%m-%d' }}</time>
+    <time datetime="{{ update.date | date: '%Y-%m-%d' }}">{{ update.date | date: '%Y-%m-%d' }}</time>{% if update.end_date %}–<time datetime="{{ update.end_date | date: '%Y-%m-%d' }}">{{ update.end_date | date: '%Y-%m-%d' }}</time>{% endif %}
     <h2>{% if is_chinese %}{{ update.title_zh | default: update.title | escape }}{% else %}{{ update.title | escape }}{% endif %}</h2>
     <div>{% if is_chinese %}{{ update.body_zh | default: update.body | markdownify }}{% else %}{{ update.body | markdownify }}{% endif %}</div>
     {% if update.image and update.image != '' %}<figure><img loading="lazy" src="{{ update.image | relative_url }}" alt="{% if is_chinese %}{{ update.image_alt_zh | default: update.image_alt | escape }}{% else %}{{ update.image_alt | escape }}{% endif %}"></figure>{% endif %}
