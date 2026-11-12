@@ -24,6 +24,14 @@ en:
   diagram_full_size: View full-size diagram
   diagram_open_label: View the full-size graph diagram in a new tab
   diagram_alt: A diagram of Q_t based on the Petersen graph, with blue circles representing cliques and orange points representing vertices associated with Petersen edges.
+  petersen_label: A classic in graph theory
+  petersen_heading: The Petersen graph
+  petersen_meta: 10 vertices · 15 edges
+  petersen_trace: Trace a longest cycle
+  petersen_reset: Reset the graph
+  petersen_note: A small graph with rich structure.
+  petersen_cycle_note: A longest cycle visits 9 of the 10 vertices.
+  petersen_description: The Petersen graph has 10 vertices and 15 edges. It has no Hamilton cycle. Use the button below to highlight a cycle through nine vertices.
   interests:
     - title: Hamiltonian graph theory
       text: Hamiltonian cycles and paths, Hamiltonian-connectedness, and sufficient conditions involving degree, connectivity, and domination.
@@ -70,6 +78,14 @@ zh:
   diagram_full_size: 查看原图
   diagram_open_label: 在新标签页中查看完整图示
   diagram_alt: 基于 Petersen 图构造的 Q_t 示意图，蓝色圆圈表示团，橙色点表示与 Petersen 图的边对应的顶点。
+  petersen_label: 图论中的经典
+  petersen_heading: Petersen 图
+  petersen_meta: 10 个顶点 · 15 条边
+  petersen_trace: 高亮一个最长圈
+  petersen_reset: 还原图形
+  petersen_note: 一个小图，蕴含丰富的结构。
+  petersen_cycle_note: 一个最长圈经过 10 个顶点中的 9 个。
+  petersen_description: Petersen 图有 10 个顶点、15 条边，不含哈密尔顿圈。点击下方按钮可高亮一个经过 9 个顶点的圈。
   interests:
     - title: 哈密尔顿图论
       text: 哈密尔顿圈与路、哈密尔顿连通性，以及与度、连通度和支配有关的充分条件。

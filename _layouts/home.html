@@ -32,21 +32,35 @@ layout: default
       <div><p class="home-eyebrow">{{ home.research_label }}</p><h2 id="home-research-title">{{ home.research_heading }}</h2></div>
       <a class="home-text-link" href="{{ home.research_url | relative_url }}">{{ home.papers_link }} <span aria-hidden="true">{% include home-arrow.svg %}</span></a>
     </div>
-    <figure class="home-research-figure" id="research-diagram" aria-labelledby="research-diagram-title">
-      <a class="home-research-image-link" href="{{ '/images/qt-construction.png' | relative_url }}" target="_blank" rel="noopener" aria-label="{{ home.diagram_open_label | escape }}">
-        <img src="{{ '/images/qt-construction.png' | relative_url }}" alt="{{ home.diagram_alt | escape }}" width="2048" height="1961" loading="lazy" decoding="async">
-      </a>
-      <figcaption class="home-research-caption">
+    <div class="home-research-figures" id="research-diagram">
+      <figure class="home-research-figure" aria-labelledby="research-diagram-title">
         <p class="home-eyebrow">{{ home.diagram_label }}</p>
-        <h3 id="research-diagram-title">{{ home.diagram_heading }}</h3>
-        <p>{{ home.diagram_description }}</p>
-        <ul class="home-diagram-key" aria-label="{{ home.diagram_key_label }}">
-          <li><span class="home-diagram-dot home-diagram-dot--clique" aria-hidden="true"></span>{{ home.diagram_cliques }}</li>
-          <li><span class="home-diagram-dot home-diagram-dot--vertex" aria-hidden="true"></span>{{ home.diagram_vertices }}</li>
-        </ul>
-        <a class="home-text-link" href="{{ '/images/qt-construction.png' | relative_url }}" target="_blank" rel="noopener" aria-label="{{ home.diagram_open_label | escape }}">{{ home.diagram_full_size }} <span aria-hidden="true">{% include home-arrow.svg %}</span></a>
-      </figcaption>
-    </figure>
+        <div class="home-research-visual">
+          <a class="home-research-image-link" href="{{ '/images/qt-construction.png' | relative_url }}" target="_blank" rel="noopener" aria-label="{{ home.diagram_open_label | escape }}">
+            <img src="{{ '/images/qt-construction.png' | relative_url }}" alt="{{ home.diagram_alt | escape }}" width="2048" height="1961" loading="lazy" decoding="async">
+          </a>
+        </div>
+        <figcaption class="home-research-caption">
+          <h3 id="research-diagram-title">{{ home.diagram_heading }}</h3>
+          <p>{{ home.diagram_description }}</p>
+          <ul class="home-diagram-key" aria-label="{{ home.diagram_key_label }}">
+            <li><span class="home-diagram-dot home-diagram-dot--clique" aria-hidden="true"></span>{{ home.diagram_cliques }}</li>
+            <li><span class="home-diagram-dot home-diagram-dot--vertex" aria-hidden="true"></span>{{ home.diagram_vertices }}</li>
+          </ul>
+          <a class="home-text-link" href="{{ '/images/qt-construction.png' | relative_url }}" target="_blank" rel="noopener" aria-label="{{ home.diagram_open_label | escape }}">{{ home.diagram_full_size }} <span aria-hidden="true">{% include home-arrow.svg %}</span></a>
+        </figcaption>
+      </figure>
+      <figure class="home-research-figure home-petersen-figure" data-petersen-figure aria-labelledby="research-petersen-heading">
+        <p class="home-eyebrow">{{ home.petersen_label }}</p>
+        <div class="home-research-visual">{% include research-petersen.svg %}</div>
+        <figcaption class="home-research-caption">
+          <h3 id="research-petersen-heading">{{ home.petersen_heading }}</h3>
+          <p class="home-petersen-meta">{{ home.petersen_meta }}</p>
+          <button class="home-cycle-toggle" type="button" hidden aria-pressed="false" aria-controls="research-petersen" data-default-label="{{ home.petersen_trace | escape }}" data-active-label="{{ home.petersen_reset | escape }}"><span aria-hidden="true">↻</span> <span data-cycle-label>{{ home.petersen_trace }}</span></button>
+          <p class="home-petersen-note" data-cycle-note data-default-note="{{ home.petersen_note | escape }}" data-active-note="{{ home.petersen_cycle_note | escape }}" aria-live="polite">{{ home.petersen_note }}</p>
+        </figcaption>
+      </figure>
+    </div>
     <div class="home-research-grid">
       {% for interest in home.interests %}
       <article class="home-interest">
@@ -69,3 +83,4 @@ layout: default
   </section>
 
 </main>
+<script src="{{ '/assets/js/home-research.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

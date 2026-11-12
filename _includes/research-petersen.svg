@@ -1,0 +1,71 @@
+<!-- Petersen graph geometry from the user's reference homepage, including its nine-vertex cycle. -->
+<svg xmlns="http://www.w3.org/2000/svg" id="research-petersen" class="home-petersen-svg" viewBox="0 0 440 360" role="img" aria-labelledby="research-petersen-title research-petersen-desc">
+  <title id="research-petersen-title">{{ home.petersen_heading | escape }}</title>
+  <desc id="research-petersen-desc">{{ home.petersen_description | escape }}</desc>
+  <defs>
+    <pattern id="research-petersen-dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r=".7" fill="#c9d3c8">
+</circle>
+    </pattern>
+  </defs>
+  <rect width="440" height="360" fill="url(#research-petersen-dots)">
+</rect>
+  <circle cx="220" cy="180" r="143" class="graph-guide">
+</circle>
+  <circle cx="220" cy="180" r="70" class="graph-guide">
+</circle>
+  <g id="research-petersen-edges">
+    <line x1="220" y1="37" x2="356.00108183020694" y2="135.8105698043825" class="graph-edge in-cycle">
+</line>
+    <line x1="220" y1="37" x2="220" y2="110" class="graph-edge in-cycle">
+</line>
+    <line x1="220" y1="110" x2="261.1449676604731" y2="236.63118960624632" class="graph-edge in-cycle">
+</line>
+    <line x1="356.00108183020694" y1="135.8105698043825" x2="304.05329107782364" y2="295.6894301956175" class="graph-edge in-cycle">
+</line>
+    <line x1="356.00108183020694" y1="135.8105698043825" x2="286.57395614066075" y2="158.36881039375368" class="graph-edge">
+</line>
+    <line x1="286.57395614066075" y1="158.36881039375368" x2="178.85503233952687" y2="236.63118960624632" class="graph-edge in-cycle">
+</line>
+    <line x1="304.05329107782364" y1="295.6894301956175" x2="135.94670892217636" y2="295.6894301956175" class="graph-edge in-cycle">
+</line>
+    <line x1="304.05329107782364" y1="295.6894301956175" x2="261.1449676604731" y2="236.63118960624632" class="graph-edge">
+</line>
+    <line x1="261.1449676604731" y1="236.63118960624632" x2="153.42604385933925" y2="158.36881039375368" class="graph-edge in-cycle">
+</line>
+    <line x1="135.94670892217636" y1="295.6894301956175" x2="83.99891816979303" y2="135.81056980438254" class="graph-edge">
+</line>
+    <line x1="135.94670892217636" y1="295.6894301956175" x2="178.85503233952687" y2="236.63118960624632" class="graph-edge in-cycle">
+</line>
+    <line x1="178.85503233952687" y1="236.63118960624632" x2="220" y2="110" class="graph-edge">
+</line>
+    <line x1="83.99891816979303" y1="135.81056980438254" x2="220" y2="37" class="graph-edge">
+</line>
+    <line x1="83.99891816979303" y1="135.81056980438254" x2="153.42604385933925" y2="158.36881039375368" class="graph-edge">
+</line>
+    <line x1="153.42604385933925" y1="158.36881039375368" x2="286.57395614066075" y2="158.36881039375368" class="graph-edge in-cycle">
+</line>
+  </g>
+  <g id="research-petersen-nodes">
+    <circle cx="220" cy="37" r="6.5" class="graph-node in-cycle">
+</circle>
+    <circle cx="356.00108183020694" cy="135.8105698043825" r="6.5" class="graph-node in-cycle">
+</circle>
+    <circle cx="304.05329107782364" cy="295.6894301956175" r="6.5" class="graph-node in-cycle">
+</circle>
+    <circle cx="135.94670892217636" cy="295.6894301956175" r="6.5" class="graph-node in-cycle">
+</circle>
+    <circle cx="83.99891816979303" cy="135.81056980438254" r="6.5" class="graph-node">
+</circle>
+    <circle cx="220" cy="110" r="6.5" class="graph-node in-cycle">
+</circle>
+    <circle cx="286.57395614066075" cy="158.36881039375368" r="6.5" class="graph-node in-cycle">
+</circle>
+    <circle cx="261.1449676604731" cy="236.63118960624632" r="6.5" class="graph-node in-cycle">
+</circle>
+    <circle cx="178.85503233952687" cy="236.63118960624632" r="6.5" class="graph-node in-cycle">
+</circle>
+    <circle cx="153.42604385933925" cy="158.36881039375368" r="6.5" class="graph-node in-cycle">
+</circle>
+  </g>
+</svg>

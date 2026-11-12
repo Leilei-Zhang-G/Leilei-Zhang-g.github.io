@@ -42,19 +42,35 @@
 .academic-home .home-text-link { margin-bottom: 3px; font-size: 13px; font-weight: 600; text-decoration: none; }
 .home-text-link span { margin-left: 8px; }
 .home-text-link:hover { text-decoration: underline; }
-.academic-home .home-research-figure { display: grid; grid-template-columns: minmax(0, 240px) minmax(0, 1fr); align-items: center; gap: 40px; margin: 0 0 28px; padding: 24px; border: 1px solid var(--home-line); background: var(--home-surface); scroll-margin-top: 90px; }
+.home-research-figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-bottom: 28px; scroll-margin-top: 90px; }
+.academic-home .home-research-figure { display: block; min-width: 0; margin: 0; padding: 24px; border: 1px solid var(--home-line); background: var(--home-surface); }
+.academic-home .home-research-figure > .home-eyebrow { margin-bottom: 20px; font-size: 10px; }
+.home-research-visual { display: grid; place-items: center; height: 240px; margin-bottom: 24px; }
 .home-research-image-link { display: block; width: 100%; max-width: 240px; justify-self: center; padding: 8px; background: #fff; cursor: zoom-in; }
 .home-research-image-link img { display: block; width: 100%; height: auto; margin: 0; border-radius: 0; }
 .academic-home .home-research-caption { margin: 0; color: var(--home-muted); font-family: inherit; font-size: 15px; line-height: 1.75; font-style: normal; }
-.academic-home .home-research-caption .home-eyebrow { font-size: 10px; margin-bottom: 18px; }
-.academic-home .home-research-caption h3 { margin: 0 0 18px; font-size: 30px; line-height: 1.25; font-weight: 500; letter-spacing: -.025em; }
+.academic-home .home-research-caption h3 { margin: 0 0 12px; font-size: 24px; line-height: 1.25; font-weight: 500; letter-spacing: -.025em; }
 .academic-home .home-research-caption > .home-text-link { border-bottom: 0; }
-.home-research-caption > p:not(.home-eyebrow) { max-width: 420px; margin-bottom: 22px; }
-.academic-home .home-diagram-key { display: grid; gap: 10px; margin: 0 0 28px; padding: 0; list-style: none; font-size: 12px; line-height: 1.6; }
+.home-research-caption > p { max-width: 420px; margin-bottom: 16px; }
+.academic-home .home-diagram-key { display: grid; gap: 8px; margin: 0 0 16px; padding: 0; list-style: none; font-size: 12px; line-height: 1.6; }
 .home-diagram-key li { display: flex; align-items: baseline; gap: 10px; margin: 0; }
 .home-diagram-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
 .home-diagram-dot--clique { border: 2px solid #2878a5; background: #e6f2f8; }
 .home-diagram-dot--vertex { border: 1px solid #a6632a; background: #c87632; }
+.home-petersen-svg { display: block; width: 100%; max-width: 293.33px; height: auto; }
+.home-petersen-svg .graph-guide { fill: none; stroke: #dbe2d5; stroke-width: 1; }
+.home-petersen-svg .graph-edge { stroke: #81998b; stroke-width: 1.55; transition: stroke .45s, stroke-width .45s, opacity .45s; }
+.home-petersen-svg .graph-node { fill: #203c36; stroke: #f7f7f2; stroke-width: 2; transition: fill .45s, opacity .45s; }
+.home-petersen-figure.is-tracing .graph-edge.in-cycle { stroke: #b07156; stroke-width: 2.8; }
+.home-petersen-figure.is-tracing .graph-node.in-cycle { fill: #9e6046; }
+.home-petersen-figure.is-tracing .graph-edge:not(.in-cycle) { opacity: .35; }
+.home-petersen-figure.is-tracing .graph-node:not(.in-cycle) { opacity: .4; }
+.academic-home .home-petersen-meta { font-size: 13px; }
+.academic-home .home-cycle-toggle { display: inline-flex; align-items: center; gap: 8px; padding: 9px 12px; margin: 0 0 12px; border: 1px solid var(--home-line); border-radius: 0; background: transparent; color: var(--home-accent); font: inherit; font-size: 13px; line-height: 1.5; text-align: left; cursor: pointer; }
+.home-cycle-toggle[hidden] { display: none !important; }
+.academic-home .home-cycle-toggle:hover { background: var(--home-tint); border-color: var(--home-accent); }
+.home-cycle-toggle:focus-visible { outline: 2px solid var(--home-accent); outline-offset: 3px; }
+.academic-home .home-petersen-note { margin-bottom: 0; font-size: 13px; }
 .home-research-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid var(--home-line); background: var(--home-surface); }
 .home-interest { display: flex; flex-direction: column; padding: 28px; }
 .home-interest + .home-interest { border-left: 1px solid var(--home-line); }
@@ -77,8 +93,7 @@
 .home-activity-links a:hover .home-link-arrow { transform: translate(2px, -2px); }
 .home-activity-links a:hover h3 { color: var(--home-rust); }
 @media (max-width: 960px) {
-  .academic-home .home-research-figure { gap: 32px; padding: 24px; }
-  .academic-home .home-research-caption h3 { font-size: 27px; }
+  .home-research-figures { gap: 20px; }
   .home-hero-grid { grid-template-columns: minmax(0, 1fr) 230px; column-gap: 40px; padding-top: 44px; padding-bottom: 44px; }
   .home-interest { padding: 22px; }
   .academic-home .home-interest h3 { font-size: 21px; }
@@ -99,8 +114,11 @@
   .home-research { padding-top: 38px; padding-bottom: 38px; }
   .home-section-heading { flex-direction: column; align-items: flex-start; gap: 14px; margin-bottom: 24px; }
   .academic-home h2 { font-size: 27px; }
-  .academic-home .home-research-figure { grid-template-columns: 1fr; gap: 20px; padding: 20px; margin-bottom: 24px; }
+  .home-research-figures { grid-template-columns: 1fr; margin-bottom: 24px; }
+  .academic-home .home-research-figure { padding: 20px; }
+  .home-research-visual { height: 180px; margin-bottom: 20px; }
   .home-research-image-link { max-width: 180px; }
+  .home-petersen-svg { max-width: 220px; }
   .academic-home .home-research-caption h3 { font-size: 24px; }
   .academic-home .home-research-caption { font-size: 16px; }
   .academic-home .home-diagram-key { margin-bottom: 22px; }
@@ -131,6 +149,7 @@
   .home-hero-grid { padding-top: 16px; padding-bottom: 24px; }
   .home-portrait-frame { box-shadow: none; }
   .home-interest, .home-activity-links > a, .home-research-figure { break-inside: avoid; }
+  .home-cycle-toggle { display: none !important; }
   .home-research-grid { grid-template-columns: 1fr; }
   .home-interest + .home-interest { border-left: 0; border-top: 1px solid var(--home-line); }
 }
