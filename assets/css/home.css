@@ -24,7 +24,7 @@
 .home-bio p:last-of-type { margin-bottom: 0; }
 .academic-home .home-portrait { grid-area: portrait; align-self: center; width: 100%; max-width: 280px; margin: 0; z-index: 1; }
 .home-portrait-frame { padding: 9px; border: 1px solid var(--home-line); background: var(--home-surface); box-shadow: 12px 12px 0 var(--home-tint); }
-.home-portrait img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 28%; }
+.home-portrait img { display: block; width: 100%; height: auto; }
 .home-portrait figcaption { display: flex; align-items: center; gap: 8px; margin-top: 25px; color: var(--home-muted); font-size: 11px; font-style: normal; letter-spacing: 0.08em; text-transform: uppercase; }
 .home-location-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--home-rust); }
 .home-graph { position: absolute; width: 450px; height: 450px; right: -110px; top: 8px; color: var(--home-accent); opacity: 0.16; pointer-events: none; transform: rotate(10deg); }
