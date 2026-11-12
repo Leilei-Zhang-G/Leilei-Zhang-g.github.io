@@ -14,8 +14,7 @@
 .home-heading { grid-area: heading; z-index: 1; }
 .home-heading h1 { margin: 0 0 20px; font-size: clamp(38px, 4.5vw, 58px); line-height: 1.1; font-weight: 500; letter-spacing: -0.035em; }
 .home-heading h1 span { display: block; margin-top: 12px; font-size: 20px; line-height: 1.4; letter-spacing: 0.06em; font-weight: 400; color: var(--home-muted); }
-.home-heading .home-position { margin: 0; font-size: 15px; line-height: 1.7; }
-.home-position strong { font-weight: 600; }
+.home-heading .home-position { margin: 0 0 18px; font-size: 15px; line-height: 1.7; font-weight: 400; }
 .home-position a { text-decoration: none; }
 .home-position a:hover { text-decoration: underline; }
 .home-bio { grid-area: bio; z-index: 1; max-width: 700px; }
@@ -33,6 +32,7 @@
 .academic-home .home-button { display: inline-flex; justify-content: space-between; align-items: center; gap: 28px; padding: 12px 18px; border: 1px solid var(--home-line); font-size: 13px; font-weight: 600; line-height: 1.5; color: var(--home-ink); text-decoration: none; transition: border-color .18s ease, background-color .18s ease; }
 .academic-home .home-button:hover { border-color: var(--home-accent); background: var(--home-tint); }
 .academic-home .home-button-primary { background: var(--home-accent); border-color: var(--home-accent); color: var(--home-surface); }
+.home-button-primary .home-arrow { transform: rotate(90deg); }
 .academic-home .home-button-primary:hover { color: var(--home-surface); background: var(--home-ink); border-color: var(--home-ink); }
 .home-button span { font-size: 18px; font-weight: 400; }
 .home-research { padding-top: 60px; padding-bottom: 52px; scroll-margin-top: 90px; }
