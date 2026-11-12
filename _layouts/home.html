@@ -7,7 +7,7 @@ layout: default
     <div class="home-container home-hero-grid">
       <header class="home-heading">
         <p class="home-position">{{ home.position }} | <a href="{{ site.author.employer_url }}">{{ home.institution }}</a></p>
-        <h1 id="home-name">{{ home.name }}<span lang="{{ home.secondary_lang }}">{{ home.secondary_name }}</span></h1>
+        <h1 id="home-name">{{ home.name }}{% if home.secondary_name %}<span lang="{{ home.secondary_lang }}">{{ home.secondary_name }}</span>{% endif %}</h1>
       </header>
       <figure class="home-portrait">
         <div class="home-portrait-frame">
