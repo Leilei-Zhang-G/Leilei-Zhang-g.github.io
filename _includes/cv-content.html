@@ -1,6 +1,6 @@
 {% assign is_chinese = false %}{% assign cv_presentation = site.data.home.en %}{% if page.lang == 'zh-CN' %}{% assign is_chinese = true %}{% assign cv_presentation = site.data.home.zh %}{% endif %}
 {% if site.data.academic.cv.pdf_url and site.data.academic.cv.pdf_url != '' %}
-<p class="cv-download"><a class="academic-button" href="{{ site.data.academic.cv.pdf_url | relative_url }}" download="Leilei-Zhang-CV-2026.pdf">{% if is_chinese %}下载中文简历（PDF，2026版）{% else %}Download CV (PDF, Chinese, 2026){% endif %}<span aria-hidden="true">{% include home-arrow.svg %}</span></a></p>
+<p class="cv-download"><a class="academic-button" href="{{ site.data.academic.cv.pdf_url | relative_url }}" target="_blank" rel="noopener" aria-label="{% if is_chinese %}在新标签页中查看中文简历（PDF，2026版）{% else %}View CV (PDF, Chinese, 2026) in a new tab{% endif %}">{% if is_chinese %}查看中文简历（PDF，2026版）{% else %}View CV (PDF, Chinese, 2026){% endif %}<span aria-hidden="true">{% include home-arrow.svg %}</span></a></p>
 {% else %}
 <p class="section-note">{% if is_chinese %}以下是我的简要学术信息，完整简历 PDF 将在整理后补充。{% else %}A brief academic overview is provided below. A full CV in PDF format will be added soon.{% endif %}</p>
 {% endif %}
