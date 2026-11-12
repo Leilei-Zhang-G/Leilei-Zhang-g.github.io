@@ -4,7 +4,7 @@
 <div class="academic-timeline">
   {% for update in updates %}
   <article class="academic-entry">
-    <div class="news-date">{% if update.date_precision == 'year' %}{{ update.date | escape }}{% else %}<time datetime="{{ update.date | date: '%Y-%m-%d' }}">{{ update.date | date: '%Y-%m-%d' }}</time>{% if update.end_date %}<span class="news-date-end">–<time datetime="{{ update.end_date | date: '%Y-%m-%d' }}">{{ update.end_date | date: '%Y-%m-%d' }}</time></span>{% endif %}{% endif %}</div>
+    <div class="news-date">{% if update.date_precision == 'year' %}{{ update.date | escape }}{% else %}<span class="academic-date-range"><time datetime="{{ update.date | date: '%Y-%m-%d' }}">{{ update.date | date: '%Y-%m-%d' }}</time>{% if update.end_date %}<span class="academic-date-separator">~</span><time datetime="{{ update.end_date | date: '%Y-%m-%d' }}">{{ update.end_date | date: '%Y-%m-%d' }}</time>{% endif %}</span>{% endif %}</div>
     <div class="news-detail{% if update.image and update.image != '' %} news-detail--with-image{% endif %}">
       <div class="news-copy">
         <h2>{% if is_chinese %}{{ update.title_zh | default: update.title | escape }}{% else %}{{ update.title | escape }}{% endif %}</h2>

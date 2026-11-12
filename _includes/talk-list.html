@@ -13,7 +13,7 @@
     {% endif %}
     <div class="talk-row">
       <div class="talk-date">
-        <time datetime="{{ talk.date | date: '%Y-%m-%d' }}">{{ talk.date | date: '%Y-%m-%d' }}</time>{% if talk.end_date %}<span class="talk-date-end">– <time datetime="{{ talk.end_date | date: '%Y-%m-%d' }}">{{ talk.end_date | date: '%Y-%m-%d' }}</time></span><span class="talk-date-note">{% if is_chinese %}（会议日期）{% else %}(conference dates){% endif %}</span>{% endif %}
+        <span class="academic-date-range"><time datetime="{{ talk.date | date: '%Y-%m-%d' }}">{{ talk.date | date: '%Y-%m-%d' }}</time>{% if talk.end_date %}<span class="academic-date-separator">~</span><time datetime="{{ talk.end_date | date: '%Y-%m-%d' }}">{{ talk.end_date | date: '%Y-%m-%d' }}</time>{% endif %}</span>{% if talk.end_date %}<span class="talk-date-note">{% if is_chinese %}（会议日期）{% else %}(conference dates){% endif %}</span>{% endif %}
       </div>
       <div class="talk-detail">
         <h3>{{ talk.title | escape }}</h3>
