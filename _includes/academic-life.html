@@ -5,9 +5,11 @@
   {% for update in updates %}
   <article class="academic-entry">
     <div class="news-date">{% if update.date_precision == 'year' %}{{ update.date | escape }}{% else %}<time datetime="{{ update.date | date: '%Y-%m-%d' }}">{{ update.date | date: '%Y-%m-%d' }}</time>{% if update.end_date %}<span class="news-date-end">–<time datetime="{{ update.end_date | date: '%Y-%m-%d' }}">{{ update.end_date | date: '%Y-%m-%d' }}</time></span>{% endif %}{% endif %}</div>
-    <div class="news-detail">
-      <h2>{% if is_chinese %}{{ update.title_zh | default: update.title | escape }}{% else %}{{ update.title | escape }}{% endif %}</h2>
-      <div>{% if is_chinese %}{{ update.body_zh | default: update.body | markdownify }}{% else %}{{ update.body | markdownify }}{% endif %}</div>
+    <div class="news-detail{% if update.image and update.image != '' %} news-detail--with-image{% endif %}">
+      <div class="news-copy">
+        <h2>{% if is_chinese %}{{ update.title_zh | default: update.title | escape }}{% else %}{{ update.title | escape }}{% endif %}</h2>
+        <div>{% if is_chinese %}{{ update.body_zh | default: update.body | markdownify }}{% else %}{{ update.body | markdownify }}{% endif %}</div>
+      </div>
       {% if update.image and update.image != '' %}<figure><a href="{{ update.image | relative_url }}" target="_blank" rel="noopener" aria-label="{% if is_chinese %}在新标签页查看原图{% else %}View the full-size image in a new tab{% endif %}"><img loading="lazy" src="{{ update.image | relative_url }}"{% if update.image_width and update.image_height %} width="{{ update.image_width }}" height="{{ update.image_height }}"{% endif %} alt="{% if is_chinese %}{{ update.image_alt_zh | default: update.image_alt | escape }}{% else %}{{ update.image_alt | escape }}{% endif %}"></a></figure>{% endif %}
     </div>
   </article>
