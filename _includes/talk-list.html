@@ -4,8 +4,6 @@
 <ol class="academic-talks" reversed>
   {% for talk in talks %}
   <li>
-    <time datetime="{{ talk.date | date: '%Y-%m-%d' }}">{{ talk.date | date: '%Y-%m-%d' }}</time>{% if talk.end_date %}–<time datetime="{{ talk.end_date | date: '%Y-%m-%d' }}">{{ talk.end_date | date: '%Y-%m-%d' }}</time> <span class="section-note">{% if is_chinese %}（会议日期）{% else %}(conference dates){% endif %}</span>{% endif %}
-    <h3>{{ talk.title | escape }}</h3>
     {% if is_chinese %}
       {% assign event_name = talk.event_zh | default: talk.event %}
       {% assign location_name = talk.location_zh | default: talk.location %}
@@ -13,10 +11,15 @@
       {% assign event_name = talk.event %}
       {% assign location_name = talk.location %}
     {% endif %}
-    <p>{% if talk.event_url != blank %}<a href="{{ talk.event_url | escape }}">{{ event_name | escape }}</a>{% else %}{{ event_name | escape }}{% endif %}{% if location_name != blank %} · {{ location_name | escape }}{% endif %}</p>
-    {% if talk.programme_url != blank or talk.slides_url != blank %}
-    <p class="academic-entry-links">{% if talk.programme_url and talk.programme_url != '' %}<a href="{{ talk.programme_url | escape }}">{% if is_chinese %}会议日程{% else %}Programme{% endif %}</a>{% endif %}{% if talk.slides_url and talk.slides_url != '' %}{% if talk.programme_url and talk.programme_url != '' %} · {% endif %}<a href="{{ talk.slides_url | relative_url }}" target="_blank" rel="noopener">{% if is_chinese %}报告幻灯片（PDF）{% else %}Slides (PDF){% endif %}</a>{% endif %}</p>
-    {% endif %}
+    <div class="talk-row">
+      <div class="talk-date">
+        <time datetime="{{ talk.date | date: '%Y-%m-%d' }}">{{ talk.date | date: '%Y-%m-%d' }}</time>{% if talk.end_date %}<span class="talk-date-end">– <time datetime="{{ talk.end_date | date: '%Y-%m-%d' }}">{{ talk.end_date | date: '%Y-%m-%d' }}</time></span><span class="talk-date-note">{% if is_chinese %}（会议日期）{% else %}(conference dates){% endif %}</span>{% endif %}
+      </div>
+      <div class="talk-detail">
+        <h3>{{ talk.title | escape }}</h3>
+        <p class="talk-meta">{% if talk.event_url != blank %}<a href="{{ talk.event_url | escape }}">{{ event_name | escape }}</a>{% else %}{{ event_name | escape }}{% endif %}{% if location_name != blank %} · <span class="talk-location">{{ location_name | escape }}</span>{% endif %}{% if talk.slides_url and talk.slides_url != '' %} · <a class="talk-resource" href="{{ talk.slides_url | relative_url }}" target="_blank" rel="noopener">{% if is_chinese %}报告幻灯片（PDF）{% else %}Slides (PDF){% endif %}</a>{% endif %}{% if talk.programme_url and talk.programme_url != '' %} · <a class="talk-resource" href="{{ talk.programme_url | escape }}">{% if is_chinese %}会议日程{% else %}Programme{% endif %}</a>{% endif %}</p>
+      </div>
+    </div>
   </li>
   {% endfor %}
 </ol>

@@ -1,5 +1,6 @@
 ---
 layout: academic
+page_class: talks-design
 title: Talks
 permalink: /talks/
 author_profile: false
