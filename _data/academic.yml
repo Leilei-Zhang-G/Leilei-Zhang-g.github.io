@@ -103,9 +103,9 @@ updates:
   - date: "2025-08-19"
     end_date: "2025-08-21"
     title: "JCCA 2025 in Hiroshima"
-    title_zh: "参加广岛 JCCA 2025 并作报告"
-    body: 'I attended the [Japanese Conference on Combinatorics and its Applications 2025 (JCCA 2025)](https://sites.google.com/view/jcca-dmia-2025/home) in Hiroshima, Japan, on 19–21 August 2025 and gave a talk entitled “Hamiltonian Properties of 3-connected Claw-free Graphs and Line graphs of 3-Hypergraphs”.'
-    body_zh: '2025年8月19–21日，我在日本广岛参加了[日本组合数学及其应用会议（JCCA 2025）](https://sites.google.com/view/jcca-dmia-2025/home)，并作了题为“Hamiltonian Properties of 3-connected Claw-free Graphs and Line graphs of 3-Hypergraphs”的报告。'
+    title_zh: "参加广岛 JCCA 2025"
+    body: 'I attended the [Japanese Conference on Combinatorics and its Applications 2025 (JCCA 2025)](https://sites.google.com/view/jcca-dmia-2025/home) in Hiroshima, Japan, on 19–21 August 2025.'
+    body_zh: '2025年8月19–21日，我在日本广岛参加了[日本组合数学及其应用会议（JCCA 2025）](https://sites.google.com/view/jcca-dmia-2025/home)。'
 
 # Add talks in the same format. slides_url is optional.
 talks:

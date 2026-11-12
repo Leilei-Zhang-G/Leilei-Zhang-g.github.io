@@ -21,7 +21,6 @@ en:
   diagram_key_label: Diagram key
   diagram_cliques: Blue circles represent cliques
   diagram_vertices: Orange points correspond to Petersen edges
-  diagram_full_size: View full-size diagram
   diagram_open_label: View the full-size graph diagram in a new tab
   diagram_alt: A diagram of Q_t based on the Petersen graph, with blue circles representing cliques and orange points representing vertices associated with Petersen edges.
   petersen_label: A classic in graph theory
@@ -75,7 +74,6 @@ zh:
   diagram_key_label: 图例
   diagram_cliques: 蓝色圆圈表示团
   diagram_vertices: 橙色点对应 Petersen 图的边
-  diagram_full_size: 查看原图
   diagram_open_label: 在新标签页中查看完整图示
   diagram_alt: 基于 Petersen 图构造的 Q_t 示意图，蓝色圆圈表示团，橙色点表示与 Petersen 图的边对应的顶点。
   petersen_label: 图论中的经典

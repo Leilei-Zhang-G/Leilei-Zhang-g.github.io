@@ -5,7 +5,7 @@ permalink: /cv/
 author_profile: false
 lang: en-US
 translation_url: /zh/cv/
-excerpt: Education, work experience, research grants and a downloadable CV.
+excerpt: Education, work experience, research grants and my CV.
 redirect_from:
 - /resume
 ---
