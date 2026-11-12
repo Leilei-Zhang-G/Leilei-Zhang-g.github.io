@@ -122,7 +122,7 @@ body.academic-design {
 .academic-content .academic-entry:last-child { padding-bottom: 0; border-bottom: 0; }
 .academic-content .academic-entry h2 { margin: 10px 0 18px; padding: 0; border: 0; }
 .academic-content .academic-entry > div { max-width: 860px; }
-.academic-content .academic-entry figure { margin: 24px 0 0; }
+.academic-content .academic-entry figure { max-width: 760px; margin: 24px 0 0; }
 .academic-content .academic-entry img { max-width: 100%; height: auto; border-radius: 0; }
 .academic-content .academic-talks { margin: 0; padding-left: 24px; }
 .academic-content .academic-talks > li { margin: 0; padding: 11px 0 11px 6px; border-bottom: 1px solid var(--home-line); }

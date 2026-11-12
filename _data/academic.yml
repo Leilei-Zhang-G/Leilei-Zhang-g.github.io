@@ -97,6 +97,7 @@ manuscripts:
     arxiv_url: "https://arxiv.org/abs/2409.10261"
 
 # Add updates in the format below; newest dates are displayed first.
+# For a year-only entry, use date: "2024" and date_precision: year.
 # - date: "2026-11-10"
 #   title: "Your update title"
 #   title_zh: "动态标题"
@@ -112,6 +113,17 @@ updates:
     title_zh: "参加广岛 JCCA 2025"
     body: 'I attended the [Japanese Conference on Combinatorics and its Applications 2025 (JCCA 2025)](https://sites.google.com/view/jcca-dmia-2025/home) in Hiroshima, Japan, on 19–21 August 2025.'
     body_zh: '2025年8月19–21日，我在日本广岛参加了[日本组合数学及其应用会议（JCCA 2025）](https://sites.google.com/view/jcca-dmia-2025/home)。'
+  - date: "2024"
+    date_precision: year
+    title: "A graduation tote bag"
+    title_zh: "毕业纪念帆布包"
+    body: "When I graduated in 2024, I collected the favourite graph of each member of our research group and had the collection printed on a canvas tote bag."
+    body_zh: "2024 年毕业时，我收集了师门每个人最喜欢的图，并将它们印在帆布包上。"
+    image: "/images/graduation-2024-favourite-graphs.jpg"
+    image_width: 1920
+    image_height: 1280
+    image_alt: "Ten favourite graphs from our research group, collected for a graduation tote bag."
+    image_alt_zh: "毕业纪念帆布包图案：师门成员最喜欢的十个图。"
 
 # Add talks in the same format. slides_url is optional.
 talks:
