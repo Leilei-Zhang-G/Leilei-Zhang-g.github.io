@@ -1,5 +1,6 @@
 ---
 layout: academic
+page_class: research-design
 title: 研究
 permalink: /zh/research/
 author_profile: false

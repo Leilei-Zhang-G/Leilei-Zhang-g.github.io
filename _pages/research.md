@@ -1,5 +1,6 @@
 ---
 layout: academic
+page_class: research-design
 title: Research
 permalink: /research/
 author_profile: false

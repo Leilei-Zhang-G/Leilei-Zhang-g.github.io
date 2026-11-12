@@ -1,5 +1,6 @@
 ---
 layout: academic
+page_class: cv-design
 title: CV
 permalink: /cv/
 author_profile: false

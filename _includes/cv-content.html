@@ -6,7 +6,7 @@
 {% endif %}
 <section class="cv-section" aria-labelledby="cv-position">
   <h2 id="cv-position">{% if is_chinese %}现任职位{% else %}Current position{% endif %}</h2>
-  <p><strong>{% if is_chinese %}{{ site.data.academic.cv.name_zh | escape }} · {% endif %}{{ site.author.name | escape }}</strong><br>{{ cv_presentation.position | escape }}<br><a href="{{ site.author.employer_url | escape }}">{{ cv_presentation.institution | escape }}</a></p>
+  <p><strong>{% if is_chinese %}{{ site.data.academic.cv.name_zh | escape }} · {% endif %}{{ site.author.name | escape }}</strong> · {{ cv_presentation.position | escape }} · <a href="{{ site.author.employer_url | escape }}">{{ cv_presentation.institution | escape }}</a></p>
 </section>
 <section class="cv-section" aria-labelledby="cv-experience">
   <h2 id="cv-experience">{% if is_chinese %}工作经历{% else %}Work experience{% endif %}</h2>
@@ -15,8 +15,7 @@
     <li>
       <p class="cv-date">{% if is_chinese %}{{ item.dates_zh | escape }}{% else %}{{ item.dates | escape }}{% endif %}</p>
       <div class="cv-detail">
-        <p><strong>{% if is_chinese %}{{ item.title_zh | escape }}{% else %}{{ item.title | escape }}{% endif %}</strong></p>
-        <p>{% if is_chinese %}{{ item.institution_zh | escape }}{% else %}{{ item.institution | escape }}{% endif %}</p>
+        <p><strong>{% if is_chinese %}{{ item.title_zh | escape }}{% else %}{{ item.title | escape }}{% endif %}</strong> · {% if is_chinese %}{{ item.institution_zh | escape }}{% else %}{{ item.institution | escape }}{% endif %}</p>
       </div>
     </li>
     {% endfor %}
@@ -29,8 +28,7 @@
     <li>
       <p class="cv-date">{{ item.dates | escape }}</p>
       <div class="cv-detail">
-        <p><strong>{% if is_chinese %}{{ item.institution_zh | escape }}{% else %}{{ item.institution | escape }}{% endif %}</strong></p>
-        <p>{% if is_chinese %}{{ item.degree_zh | escape }}{% else %}{{ item.degree | escape }}{% endif %}</p>
+        <p><strong>{% if is_chinese %}{{ item.institution_zh | escape }}{% else %}{{ item.institution | escape }}{% endif %}</strong> · {% if is_chinese %}{{ item.degree_zh | escape }}{% else %}{{ item.degree | escape }}{% endif %}</p>
         {% if item.supervisor %}<p class="section-note">{% if is_chinese %}导师：{{ item.supervisor_zh | default: item.supervisor | escape }}{% else %}Supervisor: {{ item.supervisor | escape }}{% endif %}</p>{% endif %}
       </div>
     </li>
@@ -45,8 +43,7 @@
       <p class="cv-date">{{ item.dates | escape }}<br>{% if is_chinese %}{{ item.role_zh | escape }}{% else %}{{ item.role | escape }}{% endif %}</p>
       <div class="cv-detail">
         <p><strong>{% if is_chinese %}{{ item.title_zh | escape }}{% else %}{{ item.title | escape }}{% endif %}</strong></p>
-        <p>{% if is_chinese %}{{ item.funder_zh | escape }}{% else %}{{ item.funder | escape }}{% endif %}</p>
-        <p class="section-note">{% if is_chinese %}项目编号{% else %}Grant number{% endif %}: {{ item.number | escape }}</p>
+        <p>{% if is_chinese %}{{ item.funder_zh | escape }}{% else %}{{ item.funder | escape }}{% endif %} <span class="section-note">· {% if is_chinese %}项目编号{% else %}Grant number{% endif %}: {{ item.number | escape }}</span></p>
       </div>
     </li>
     {% endfor %}

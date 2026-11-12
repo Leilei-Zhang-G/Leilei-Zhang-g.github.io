@@ -3,7 +3,7 @@
   <li value="{{ paper.number }}" id="publication-{{ paper.number }}">
     <p>
       <strong>{{ paper.title | escape }}</strong><br>
-      {% for author_name in paper.authors %}{% unless forloop.first %}{% if forloop.last %} and {% else %}, {% endif %}{% endunless %}{% if author_name == site.author.name %}<strong>{{ author_name | escape }}</strong>{% else %}{{ author_name | escape }}{% endif %}{% endfor %}.<br>
+      {% for author_name in paper.authors %}{% unless forloop.first %}{% if forloop.last %} and {% else %}, {% endif %}{% endunless %}{% if author_name == site.author.name %}<strong>{{ author_name | escape }}</strong>{% else %}{{ author_name | escape }}{% endif %}{% endfor %}.
       <em>{{ paper.journal | escape }}</em> <strong>{{ paper.volume }}</strong>{% if paper.issue %}({{ paper.issue }}){% endif %} ({{ paper.year }}), {% if paper.pages %}{{ paper.pages }}{% else %}{{ paper.article }}{% endif %}.
       <a href="https://doi.org/{{ paper.doi }}" aria-label="DOI: {{ paper.title | escape }}">DOI</a>{% if paper.arxiv %} · <a href="{{ paper.arxiv }}" aria-label="arXiv: {{ paper.title | escape }}">arXiv</a>{% endif %}
     </p>

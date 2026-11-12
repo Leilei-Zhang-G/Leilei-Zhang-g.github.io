@@ -5,9 +5,8 @@
   {% for manuscript in manuscripts %}
   <li>
     <h3>{{ manuscript.title | escape }}</h3>
-    {% if manuscript.authors.size > 0 %}<p>{% for author_name in manuscript.authors %}{% unless forloop.first %}{% if forloop.last %} and {% else %}, {% endif %}{% endunless %}{% if author_name == site.author.name %}<strong>{{ author_name | escape }}</strong>{% else %}{{ author_name | escape }}{% endif %}{% endfor %}.</p>{% endif %}
-    {% if manuscript.year or manuscript.arxiv_url or manuscript.pdf_url %}
-    <p class="academic-entry-links">{% if manuscript.year %}{{ manuscript.year | escape }}{% endif %}{% if manuscript.arxiv_url and manuscript.arxiv_url != '' %}{% if manuscript.year %} · {% endif %}<a href="{{ manuscript.arxiv_url | escape }}" aria-label="arXiv: {{ manuscript.title | escape }}">arXiv{% if manuscript.arxiv_id %}: {{ manuscript.arxiv_id | escape }}{% endif %}</a>{% endif %}{% if manuscript.pdf_url and manuscript.pdf_url != '' %}{% if manuscript.year or manuscript.arxiv_url %} · {% endif %}<a href="{{ manuscript.pdf_url | relative_url }}" aria-label="PDF: {{ manuscript.title | escape }}">PDF</a>{% endif %}</p>
+    {% if manuscript.authors.size > 0 or manuscript.year or manuscript.arxiv_url or manuscript.pdf_url %}
+    <p>{% if manuscript.authors.size > 0 %}{% for author_name in manuscript.authors %}{% unless forloop.first %}{% if forloop.last %} and {% else %}, {% endif %}{% endunless %}{% if author_name == site.author.name %}<strong>{{ author_name | escape }}</strong>{% else %}{{ author_name | escape }}{% endif %}{% endfor %}. {% endif %}<span class="academic-entry-links">{% if manuscript.year %}{{ manuscript.year | escape }}{% endif %}{% if manuscript.arxiv_url and manuscript.arxiv_url != '' %}{% if manuscript.year %} · {% endif %}<a href="{{ manuscript.arxiv_url | escape }}" aria-label="arXiv: {{ manuscript.title | escape }}">arXiv{% if manuscript.arxiv_id %}: {{ manuscript.arxiv_id | escape }}{% endif %}</a>{% endif %}{% if manuscript.pdf_url and manuscript.pdf_url != '' %}{% if manuscript.year or manuscript.arxiv_url %} · {% endif %}<a href="{{ manuscript.pdf_url | relative_url }}" aria-label="PDF: {{ manuscript.title | escape }}">PDF</a>{% endif %}</span></p>
     {% endif %}
   </li>
   {% endfor %}

@@ -1,5 +1,6 @@
 ---
 layout: academic
+page_class: cv-design
 title: 个人简历
 permalink: /zh/cv/
 author_profile: false
