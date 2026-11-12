@@ -71,6 +71,12 @@ manuscripts:
     authors: ["Yuxuan Liu", "Jia-Bao Yang", "Leilei Zhang"]
     arxiv_id: "2607.00770"
     arxiv_url: "https://arxiv.org/abs/2607.00770"
+  - date: "2026-05-06"
+    year: 2026
+    title: "The maximum number of triangles in graphs without vertex disjoint friendship graphs"
+    authors: ["Wanfang Chen", "Jia-Bao Yang", "Leilei Zhang"]
+    arxiv_id: "2605.04783"
+    arxiv_url: "https://arxiv.org/abs/2605.04783"
   - date: "2026-03-01"
     year: 2026
     title: "Hamiltonian Properties of 3-Connected Claw-Free Graphs and Line Graphs of 3-Hypergraphs"
