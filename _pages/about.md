@@ -13,7 +13,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my homepage. I work in graph theory and combinatorics, with particular interests in extremal problems related to cycles and paths in structural graph theory.
+I work in graph theory and combinatorics, with particular interests in extremal problems related to cycles and paths in structural graph theory.
 
 I joined Central China Normal University as a lecturer in July 2024. Since March 2025, I have been a JSPS International Research Fellow at Yokohama National University, working mainly with Kenta Ozeki.
 
