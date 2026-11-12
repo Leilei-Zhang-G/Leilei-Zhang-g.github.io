@@ -168,6 +168,7 @@ body.academic-design {
 .site-contact { padding: 36px 0; border-top: 1px solid var(--home-line); background: var(--home-tint); }
 .site-contact-inner { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 40px; }
 .site-contact h2 { font-size: 22px; line-height: 1.25; font-weight: 500; letter-spacing: -.025em; margin: 0 0 12px; }
+.site-emails { display: flex; flex-wrap: wrap; gap: 6px 24px; }
 .site-contact .site-email { font-size: 16px; text-decoration: none; overflow-wrap: anywhere; }
 .site-email span { margin-left: 10px; }
 .site-contact .site-email:hover { text-decoration: underline; }

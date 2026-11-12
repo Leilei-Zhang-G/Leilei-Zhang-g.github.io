@@ -4,7 +4,10 @@
   <div class="site-container site-contact-inner">
     <div>
       <h2 id="site-contact-title">{{ contact_text.contact_heading }}</h2>
-      <a class="site-email" href="mailto:{{ site.author.email | escape }}">{{ site.author.email }} <span aria-hidden="true">{% include home-arrow.svg %}</span></a>
+      <div class="site-emails">
+        <a class="site-email" href="mailto:{{ site.author.email | escape }}">{{ site.author.email | escape }} <span aria-hidden="true">{% include home-arrow.svg %}</span></a>
+        {% if site.author.email_secondary and site.author.email_secondary != '' %}<a class="site-email" href="mailto:{{ site.author.email_secondary | escape }}">{{ site.author.email_secondary | escape }} <span aria-hidden="true">{% include home-arrow.svg %}</span></a>{% endif %}
+      </div>
     </div>
     <nav class="site-profiles" aria-label="{{ contact_text.profiles_label }}">
       {% for profile in site.data.academic.profiles %}{% if profile.url and profile.url != '' %}
