@@ -1,5 +1,6 @@
 ---
 layout: academic
+page_class: news-design
 title: News
 permalink: /academic-life/
 author_profile: false

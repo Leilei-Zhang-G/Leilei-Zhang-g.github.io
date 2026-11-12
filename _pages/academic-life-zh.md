@@ -1,5 +1,6 @@
 ---
 layout: academic
+page_class: news-design
 title: 动态
 permalink: /zh/academic-life/
 author_profile: false

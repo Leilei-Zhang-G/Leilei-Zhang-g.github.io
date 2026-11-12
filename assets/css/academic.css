@@ -117,13 +117,18 @@ body.academic-design {
 .academic-content .cv-detail strong { font-weight: 600; }
 
 /* News, talks and profiles share light dividers and muted metadata. */
-.academic-content .academic-entry { padding: 30px 0; border-bottom: 1px solid var(--home-line); }
+.academic-content .academic-entry { display: grid; grid-template-columns: 116px minmax(0, 1fr); gap: 20px; padding: 16px 0; border-bottom: 1px solid var(--home-line); }
 .academic-content .academic-entry:first-child { padding-top: 0; }
 .academic-content .academic-entry:last-child { padding-bottom: 0; border-bottom: 0; }
-.academic-content .academic-entry h2 { margin: 10px 0 18px; padding: 0; border: 0; }
-.academic-content .academic-entry > div { max-width: 860px; }
-.academic-content .academic-entry figure { max-width: 760px; margin: 24px 0 0; }
-.academic-content .academic-entry img { max-width: 100%; height: auto; border-radius: 0; }
+.academic-content .news-date { padding-top: 3px; color: var(--home-muted); font-size: 12px; line-height: 1.5; font-variant-numeric: tabular-nums; }
+.academic-content .news-date time { font-size: inherit; line-height: inherit; white-space: nowrap; }
+.news-date-end { display: block; }
+.news-detail { min-width: 0; max-width: 860px; }
+.academic-content .academic-entry h2 { margin: 0 0 5px; padding: 0; border: 0; font-size: 20px; line-height: 1.35; }
+.academic-content .academic-entry p { margin: 0 0 8px; font-size: 15px; line-height: 1.5; }
+.academic-content .academic-entry p:last-child { margin-bottom: 0; }
+.academic-content .academic-entry figure { max-width: 420px; margin: 12px 0 0; }
+.academic-content .academic-entry img { display: block; max-width: 100%; height: auto; border-radius: 0; }
 .academic-content .academic-talks { margin: 0; padding-left: 24px; }
 .academic-content .academic-talks > li { margin: 0; padding: 11px 0 11px 6px; border-bottom: 1px solid var(--home-line); }
 .academic-content .academic-talks > li:first-child { padding-top: 0; }
@@ -136,12 +141,12 @@ body.academic-design {
 .academic-content .academic-talks h3 { margin: 0 0 3px; font-size: 18px; line-height: 1.35; }
 .academic-content .academic-talks .talk-meta { margin: 0; color: var(--home-muted); font-size: 14px; line-height: 1.5; }
 .talk-resource { display: inline; white-space: nowrap; }
-.talks-design .academic-page-header__inner { padding-top: 22px; padding-bottom: 20px; }
-.talks-design .academic-page .site-eyebrow { margin-bottom: 8px; font-size: 10px; }
-.talks-design .academic-page h1 { margin-bottom: 8px; font-size: 34px; }
-.talks-design .academic-page .academic-page-intro { font-size: 14px; line-height: 1.5; }
-.talks-design .academic-page-graph { width: 170px; height: 170px; top: -10px; }
-.talks-design .academic-content { padding-top: 20px; padding-bottom: 32px; }
+:is(.talks-design, .news-design) .academic-page-header__inner { padding-top: 22px; padding-bottom: 20px; }
+:is(.talks-design, .news-design) .academic-page .site-eyebrow { margin-bottom: 8px; font-size: 10px; }
+:is(.talks-design, .news-design) .academic-page h1 { margin-bottom: 8px; font-size: 34px; }
+:is(.talks-design, .news-design) .academic-page .academic-page-intro { font-size: 14px; line-height: 1.5; }
+:is(.talks-design, .news-design) .academic-page-graph { width: 170px; height: 170px; top: -10px; }
+:is(.talks-design, .news-design) .academic-content { padding-top: 20px; padding-bottom: 32px; }
 .academic-content .academic-profile-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; }
 .academic-content .academic-profile { padding: 0 0 24px; border-bottom: 1px solid var(--home-line); }
 .academic-content .academic-profile h2 { margin: 0 0 12px; padding: 0; border: 0; font-size: 24px; }
@@ -188,6 +193,11 @@ body.academic-design {
   .academic-content .cv-list > li { grid-template-columns: 1fr; gap: 8px; padding: 18px 0; }
   .academic-content .cv-section { margin-bottom: 30px; }
   .academic-content .academic-empty { padding: 22px; }
+  .academic-content .academic-entry { grid-template-columns: 1fr; gap: 4px; padding: 14px 0; }
+  .academic-content .news-date { padding-top: 0; }
+  .news-date-end { display: inline; }
+  .academic-content .academic-entry h2 { font-size: 19px; }
+  .academic-content .academic-entry figure { max-width: 320px; margin-top: 10px; }
   .academic-content .academic-talks { padding-left: 22px; }
   .academic-content .academic-talks > li { padding-left: 3px; }
   .academic-content .talk-row { grid-template-columns: 1fr; gap: 4px; }
@@ -195,9 +205,9 @@ body.academic-design {
   .talk-date-end, .talk-date-note { display: inline; margin-left: 4px; }
   .academic-content .academic-talks h3 { font-size: 17px; line-height: 1.4; }
   .academic-content .academic-talks .talk-meta { font-size: 13px; line-height: 1.5; }
-  .talks-design .academic-page-header__inner { padding-top: 18px; padding-bottom: 18px; }
-  .talks-design .academic-page h1 { font-size: 30px; }
-  .talks-design .academic-content { padding-top: 18px; padding-bottom: 28px; }
+  :is(.talks-design, .news-design) .academic-page-header__inner { padding-top: 18px; padding-bottom: 18px; }
+  :is(.talks-design, .news-design) .academic-page h1 { font-size: 30px; }
+  :is(.talks-design, .news-design) .academic-content { padding-top: 18px; padding-bottom: 28px; }
   .academic-content .academic-profile-list, .site-directory { grid-template-columns: 1fr; gap: 28px; }
   .site-contact-inner { grid-template-columns: 1fr; gap: 22px; }
   .site-profiles { justify-content: flex-start; gap: 6px 24px; }
