@@ -116,7 +116,7 @@ talks:
     location: "Yokohama, Japan"
     location_zh: "日本横滨"
     programme_url: ""
-    slides_url: ""
+    slides_url: "/files/tgt38-2026-paths-slides.pdf"
   - date: "2026-08-27"
     title: "Hamiltonian Properties of 3-connected Claw-free Graphs and Line graphs of 3-Hypergraphs"
     event: "The Asian Conference on Combinatorics 2026"

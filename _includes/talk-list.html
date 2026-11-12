@@ -15,7 +15,7 @@
     {% endif %}
     <p>{% if talk.event_url != blank %}<a href="{{ talk.event_url | escape }}">{{ event_name | escape }}</a>{% else %}{{ event_name | escape }}{% endif %}{% if location_name != blank %} · {{ location_name | escape }}{% endif %}</p>
     {% if talk.programme_url != blank or talk.slides_url != blank %}
-    <p class="academic-entry-links">{% if talk.programme_url and talk.programme_url != '' %}<a href="{{ talk.programme_url | escape }}">{% if is_chinese %}会议日程{% else %}Programme{% endif %}</a>{% endif %}{% if talk.slides_url and talk.slides_url != '' %}{% if talk.programme_url and talk.programme_url != '' %} · {% endif %}<a href="{{ talk.slides_url | relative_url }}">{% if is_chinese %}报告幻灯片{% else %}Slides{% endif %}</a>{% endif %}</p>
+    <p class="academic-entry-links">{% if talk.programme_url and talk.programme_url != '' %}<a href="{{ talk.programme_url | escape }}">{% if is_chinese %}会议日程{% else %}Programme{% endif %}</a>{% endif %}{% if talk.slides_url and talk.slides_url != '' %}{% if talk.programme_url and talk.programme_url != '' %} · {% endif %}<a href="{{ talk.slides_url | relative_url }}" target="_blank" rel="noopener">{% if is_chinese %}报告幻灯片（PDF）{% else %}Slides (PDF){% endif %}</a>{% endif %}</p>
     {% endif %}
   </li>
   {% endfor %}
