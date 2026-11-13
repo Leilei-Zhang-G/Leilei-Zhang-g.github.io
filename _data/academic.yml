@@ -53,6 +53,12 @@ manuscripts:
     authors: ["Leilei Zhang"]
     arxiv_id: "2610.34038"
     arxiv_url: "https://arxiv.org/abs/2610.34038"
+  - date: "2026-10-20"
+    year: 2026
+    title: "Extremal graphs without cycles of length 0 modulo 4"
+    authors: ["Yanan Hu", "Leilei Zhang"]
+    arxiv_id: "2610.28225"
+    arxiv_url: "https://arxiv.org/abs/2610.28225"
   - date: "2026-10-17"
     year: 2026
     title: "A proof of the strong Erdős–Frankl–Füredi cover-free conjecture"
