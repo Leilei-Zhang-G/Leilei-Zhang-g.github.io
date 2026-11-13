@@ -6,7 +6,7 @@
     <span class="fold-action"><span class="fold-closed-label">{% if page.lang == 'zh-CN' %}展开列表{% else %}Show list{% endif %}</span><span class="fold-open-label">{% if page.lang == 'zh-CN' %}收起列表{% else %}Hide list{% endif %}</span><span class="fold-symbol" aria-hidden="true"></span></span>
   </summary>
   <div class="publications-fold__content">
-    <p class="section-note">{% if page.lang == 'zh-CN' %}按 arXiv 首次提交日期倒序排列。{% else %}Listed by first arXiv submission date, most recent first.{% endif %}</p>
+    <p class="section-note">{% if page.lang == 'zh-CN' %}预印本与投稿论文。{% else %}Preprints and submitted manuscripts.{% endif %}</p>
     {% include manuscript-list.html %}
   </div>
 </details>

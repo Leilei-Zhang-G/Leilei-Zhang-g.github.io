@@ -38,9 +38,15 @@ profiles:
     description_zh: "研究档案与论文。"
     url: "https://www.researchgate.net/profile/Leilei_Zhang21?ev=hdr_xprf"
 
-# Use the latest arXiv title and authors; date is the first submission date.
+# Use the latest manuscript title and authors; date is the first arXiv submission date.
+# For manuscripts without arXiv, date is the date added to this website.
 # Manuscripts are displayed newest first. pdf_url is optional.
 manuscripts:
+  - date: "2026-11-13"
+    year: 2026
+    title: "Pancyclicity of [p + 2, p]-graphs"
+    authors: ["Chengli Li", "Feng Liu", "Qi Wu", "Leilei Zhang"]
+    pdf_url: "/files/pancyclicity-p-plus-2-p-graphs.pdf"
   - date: "2026-10-25"
     year: 2026
     title: "Extremal 3-uniform hypergraphs without generalized 4-cycles"
