@@ -47,6 +47,26 @@ manuscripts:
     title: "Pancyclicity of [p + 2, p]-graphs"
     authors: ["Chengli Li", "Feng Liu", "Qi Wu", "Leilei Zhang"]
     pdf_url: "/files/pancyclicity-p-plus-2-p-graphs.pdf"
+  - date: "2026-11-13"
+    year: 2026
+    title: "The maximum number of stars in graphs with prescribed circumference or detour order"
+    authors: ["Changlong Shen", "Leilei Zhang"]
+    pdf_url: "/files/stars-prescribed-circumference-detour-order.pdf"
+  - date: "2026-11-13"
+    year: 2026
+    title: "Extremal Nonhamiltonian-Connected Graphs with Given Order and Connectivity"
+    authors: ["Kun Cheng", "Jiabao Yang", "Leilei Zhang"]
+    pdf_url: "/files/extremal-nonhamiltonian-connected-graphs.pdf"
+  - date: "2026-11-13"
+    year: 2026
+    title: "The Minimum Number of Triangles in an (n, 5, 3)-Graph"
+    authors: ["Yanan Hu", "Chengli Li", "Feng Liu", "Leilei Zhang"]
+    pdf_url: "/files/minimum-triangles-n-5-3-graph.pdf"
+  - date: "2026-11-13"
+    year: 2026
+    title: "A degree-sum condition for paths through prescribed vertices"
+    authors: ["Kun Cheng", "Leilei Zhang"]
+    pdf_url: "/files/degree-sum-paths-prescribed-vertices.pdf"
   - date: "2026-10-25"
     year: 2026
     title: "Extremal 3-uniform hypergraphs without generalized 4-cycles"
