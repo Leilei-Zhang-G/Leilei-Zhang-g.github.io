@@ -42,6 +42,12 @@ profiles:
 # For manuscripts without arXiv, date is the date added to this website.
 # Manuscripts are displayed newest first. pdf_url is optional.
 manuscripts:
+  - date: "2026-11-17"
+    year: 2026
+    title: "A sharp minimum degree condition for Hamiltonicity in line graphs of 3-hypergraphs"
+    authors: ["Kenta Ozeki", "Leilei Zhang"]
+    arxiv_id: "2611.22507"
+    arxiv_url: "https://arxiv.org/abs/2611.22507"
   - date: "2026-11-13"
     year: 2026
     title: "Pancyclicity of [p + 2, p]-graphs"
