@@ -42,6 +42,12 @@ profiles:
 # For manuscripts without arXiv, date is the date added to this website.
 # Manuscripts are displayed newest first. pdf_url is optional.
 manuscripts:
+  - date: "2026-11-23"
+    year: 2026
+    title: "A one-third bound for domination in cubic graphs of girth at least six"
+    authors: ["Kun Cheng", "Changlong Shen", "Leilei Zhang"]
+    arxiv_id: "2611.30512"
+    arxiv_url: "https://arxiv.org/abs/2611.30512"
   - date: "2026-11-17"
     year: 2026
     title: "A sharp minimum degree condition for Hamiltonicity in line graphs of 3-hypergraphs"
@@ -145,6 +151,12 @@ manuscripts:
 #   image_alt: "A description of the photo"
 #   image_alt_zh: "图片说明"
 updates:
+  - date: "2026-08-24"
+    end_date: "2026-08-28"
+    title: "ASIACOMB 2026 in South Korea"
+    title_zh: "参加韩国 ASIACOMB 2026 并作报告"
+    body: 'I attended the [Asian Conference on Combinatorics 2026 (ASIACOMB 2026)](https://asiacomb.com/) in Daejeon, South Korea, from 24 to 28 August 2026, and gave a talk entitled “Hamiltonian Properties of 3-connected Claw-free Graphs and Line graphs of 3-Hypergraphs”.'
+    body_zh: '2026 年 8 月 24–28 日，我在韩国大田参加了[亚洲组合学大会（ASIACOMB 2026）](https://asiacomb.com/)，并作了题为 “Hamiltonian Properties of 3-connected Claw-free Graphs and Line graphs of 3-Hypergraphs” 的报告。'
   - date: "2025-08-19"
     end_date: "2025-08-21"
     title: "JCCA 2025 in Hiroshima"
