@@ -167,8 +167,14 @@ updates:
     date_precision: year
     title: "A graduation tote bag"
     title_zh: "毕业纪念帆布包"
-    body: "When I graduated in 2024, I collected the favourite graph of each member of our research group and had the collection printed on a canvas tote bag."
-    body_zh: "2024 年毕业时，我收集了师门每个人最喜欢的图，并将它们印在帆布包上。"
+    body: |-
+      When I graduated in 2024, I collected the favourite graph of each member of our research group and had the collection printed on a canvas tote bag.
+
+      The fourth graph is my favorite. The neighbors of each vertex induce a path, and the graph has no Hamilton cycle. It has 12 vertices, the smallest possible order for a non-Hamiltonian locally linear graph. Proving that 12 is the minimum was the first research problem I worked on during my PhD. I finally proved it in my fourth year with help from Feng Liu, a junior member of our research group. The proof appears in [this paper](https://dmtcs.episciences.org/articles/18029).
+    body_zh: |-
+      2024 年毕业时，我收集了师门每个人最喜欢的图，并将它们印在帆布包上。
+
+      第四个图是我最喜欢的。它的每个顶点的邻域都诱导出一条路，而且它没有哈密尔顿圈。它有 12 个顶点，这是非哈密尔顿局部线性图的最小阶数。证明最小阶数是 12，是我读博时研究的第一个问题。在师门后辈 Feng Liu 的帮助下，我终于在读博第四年完成了证明。证明见[这篇论文](https://dmtcs.episciences.org/articles/18029)。
     image: "/images/graduation-2024-favourite-graphs.jpg"
     image_width: 1920
     image_height: 1280
